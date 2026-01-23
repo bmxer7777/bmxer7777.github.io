@@ -2065,6 +2065,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-23T15:36:42.023133"
+    },
+    {
+      "latitude": 29.7952065,
+      "longitude": -98.752265,
+      "accuracy": 12.379394758486601,
+      "timestamp": 1769201786.0,
+      "address": {
+        "subAdministrativeArea": "Kendall County",
+        "label": "IH-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 W",
+        "formattedAddressLines": [
+          "IH-10 W",
+          "Boerne, TX  78006",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 W, Boerne, TX  78006",
+        "fullThroroughfare": "IH-10 W",
+        "areaOfInterest": [],
+        "locality": "Boerne",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T16:03:40.573275"
     }
   ]
 }
