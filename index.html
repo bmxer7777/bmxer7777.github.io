@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYRIQ Tracker - EcoCAR Team</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 20px;
+            border-bottom: 1px solid #333;
+        }
+        
+        .header h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .header h1 span {
+            color: #00d4ff;
+        }
+        
+        .header p {
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        #map {
+            height: calc(100vh - 280px);
+            min-height: 400px;
+        }
+        
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            background: #111;
+            border-top: 1px solid #333;
+        }
+        
+        .stat-card {
+            background: #1a1a2e;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+        
+        .stat-card .label {
+            color: #888;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+        
+        .stat-card .value {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #00d4ff;
+            line-height: 1.3;
+        }
+        
+        .stat-card .subvalue {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 3px;
+        }
+        
+        .status-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #0d0d0d;
+            border-top: 1px solid #222;
+            font-size: 0.85rem;
+        }
+        
+        .status-bar .status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .status-bar .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #00ff88;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .status-bar .last-update {
+            color: #666;
+        }
+        
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #666;
+        }
+        
+        /* Custom marker */
+        .car-marker {
+            background: #00d4ff;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+        }
+        
+        .leaflet-popup-content-wrapper {
+            background: #1a1a2e;
+            color: #fff;
+            border-radius: 8px;
+        }
+        
+        .leaflet-popup-tip {
+            background: #1a1a2e;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚗 <span>LYRIQ</span> Tracker</h1>
+        <p>EcoCAR EV Challenge - Embry-Riddle Aeronautical University</p>
+    </div>
+    
+    <div id="map">
+        <div class="loading">Loading map data...</div>
+    </div>
+    
+    <div class="stats-bar">
+        <div class="stat-card">
+            <div class="label">Distance Traveled</div>
+            <div class="value" id="distance">--</div>
+            <div class="subvalue" id="distance-sub">miles</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Current Location</div>
+            <div class="value" id="location">--</div>
+            <div class="subvalue" id="location-sub"></div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Avg Speed</div>
+            <div class="value" id="speed-avg">--</div>
+            <div class="subvalue">mph</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Recent Speed</div>
+            <div class="value" id="speed-recent">--</div>
+            <div class="subvalue" id="speed-recent-sub">mph</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">States Crossed</div>
+            <div class="value" id="states">--</div>
+            <div class="subvalue" id="states-list"></div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Time in Transit</div>
+            <div class="value" id="time">--</div>
+            <div class="subvalue" id="time-sub"></div>
+        </div>
+    </div>
+    
+    <div class="status-bar">
+        <div class="status">
+            <div class="dot" id="status-dot"></div>
+            <span id="status-text">Tracking Active</span>
+        </div>
+        <div class="last-update">
+            Page refresh: <span id="page-refresh">--</span> | 
+            AirTag update: <span id="last-update">--</span>
+        </div>
+    </div>
+
+    <script>
+        // Configuration
+        const DATA_URL = 'location_history.json';
+        const REFRESH_INTERVAL = 30000; // Refresh every 30 seconds
+        
+        // Destination coordinates (CARB - California Air Resources Board, Riverside)
+        const DESTINATION = { lat: 33.9425, lng: -117.4297, name: "CARB, Riverside, CA" };
+        // Origin (1 Aerospace Blvd, Daytona Beach - ERAU)
+        const ORIGIN = { lat: 29.1857, lng: -81.0480, name: "ERAU, Daytona Beach, FL" };
+        // Departure time (Jan 21, 2026 4:30 PM EST)
+        const DEPARTURE_TIME = new Date('2026-01-21T16:30:00-05:00');
+        
+        let map;
+        let routeLine;
+        let currentMarker;
+        let originMarker;
+        let destinationMarker;
+        
+        // State name to abbreviation mapping
+        const stateAbbreviations = {
+            'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ', 'Arkansas': 'AR',
+            'California': 'CA', 'Colorado': 'CO', 'Connecticut': 'CT', 'Delaware': 'DE',
+            'Florida': 'FL', 'Georgia': 'GA', 'Hawaii': 'HI', 'Idaho': 'ID',
+            'Illinois': 'IL', 'Indiana': 'IN', 'Iowa': 'IA', 'Kansas': 'KS',
+            'Kentucky': 'KY', 'Louisiana': 'LA', 'Maine': 'ME', 'Maryland': 'MD',
+            'Massachusetts': 'MA', 'Michigan': 'MI', 'Minnesota': 'MN', 'Mississippi': 'MS',
+            'Missouri': 'MO', 'Montana': 'MT', 'Nebraska': 'NE', 'Nevada': 'NV',
+            'New Hampshire': 'NH', 'New Jersey': 'NJ', 'New Mexico': 'NM', 'New York': 'NY',
+            'North Carolina': 'NC', 'North Dakota': 'ND', 'Ohio': 'OH', 'Oklahoma': 'OK',
+            'Oregon': 'OR', 'Pennsylvania': 'PA', 'Rhode Island': 'RI', 'South Carolina': 'SC',
+            'South Dakota': 'SD', 'Tennessee': 'TN', 'Texas': 'TX', 'Utah': 'UT',
+            'Vermont': 'VT', 'Virginia': 'VA', 'Washington': 'WA', 'West Virginia': 'WV',
+            'Wisconsin': 'WI', 'Wyoming': 'WY'
+        };
+        
+        // Calculate distance between two points (Haversine formula)
+        function haversineDistance(lat1, lon1, lat2, lon2) {
+            const R = 3959; // Earth's radius in miles
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                      Math.sin(dLon/2) * Math.sin(dLon/2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            return R * c;
+        }
+        
+        // Initialize map
+        function initMap() {
+            map = L.map('map', {
+                zoomControl: true
+            }).setView([32, -100], 4); // Center on US
+            
+            // Dark map tiles
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '©OpenStreetMap, ©CartoDB',
+                maxZoom: 19
+            }).addTo(map);
+            
+            // Add origin marker
+            originMarker = L.marker([ORIGIN.lat, ORIGIN.lng], {
+                icon: L.divIcon({
+                    className: 'origin-marker',
+                    html: '🏁',
+                    iconSize: [25, 25],
+                    iconAnchor: [12, 12]
+                })
+            }).addTo(map).bindPopup(`<b>Start</b><br>${ORIGIN.name}`);
+            
+            // Add destination marker
+            destinationMarker = L.marker([DESTINATION.lat, DESTINATION.lng], {
+                icon: L.divIcon({
+                    className: 'dest-marker',
+                    html: '🎯',
+                    iconSize: [25, 25],
+                    iconAnchor: [12, 12]
+                })
+            }).addTo(map).bindPopup(`<b>Destination</b><br>${DESTINATION.name}`);
+        }
+        
+        // Get road route from OSRM
+        async function getRoadRoute(waypoints) {
+            if (waypoints.length < 2) return null;
+            
+            // Build OSRM URL with waypoints
+            const coords = waypoints.map(p => `${p[1]},${p[0]}`).join(';');
+            const url = `https://router.project-osrm.org/route/v1/driving/${coords}?overview=full&geometries=geojson`;
+            
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                
+                if (data.code === 'Ok' && data.routes && data.routes[0]) {
+                    return {
+                        geometry: data.routes[0].geometry.coordinates.map(c => [c[1], c[0]]),
+                        distance: data.routes[0].distance / 1609.34, // Convert meters to miles
+                        duration: data.routes[0].duration // seconds
+                    };
+                }
+            } catch (error) {
+                console.error('OSRM routing error:', error);
+            }
+            return null;
+        }
+        
+        // Format time duration
+        function formatDuration(ms) {
+            const totalMinutes = Math.floor(ms / 60000);
+            const hours = Math.floor(totalMinutes / 60);
+            const minutes = totalMinutes % 60;
+            const days = Math.floor(hours / 24);
+            const remainingHours = hours % 24;
+            
+            if (days > 0) {
+                return { value: days, unit: `day${days > 1 ? 's' : ''}, ${remainingHours}h ${minutes}m` };
+            }
+            return { value: hours, unit: `hour${hours !== 1 ? 's' : ''}, ${minutes}m` };
+        }
+        
+        // Update the map and stats
+        async function updateTracker() {
+            try {
+                const response = await fetch(DATA_URL + '?t=' + Date.now());
+                const data = await response.json();
+                
+                if (!data.locations || data.locations.length === 0) {
+                    console.log('No location data yet');
+                    return;
+                }
+                
+                const locations = data.locations;
+                const current = locations[locations.length - 1];
+                
+                // Build waypoints: Origin -> all recorded locations
+                const waypoints = [
+                    [ORIGIN.lat, ORIGIN.lng],
+                    ...locations.map(l => [l.latitude, l.longitude])
+                ];
+                
+                // Get road route from OSRM
+                const route = await getRoadRoute(waypoints);
+                
+                // Remove old route line
+                if (routeLine) {
+                    map.removeLayer(routeLine);
+                }
+                
+                if (route) {
+                    // Draw road-following route
+                    routeLine = L.polyline(route.geometry, {
+                        color: '#00d4ff',
+                        weight: 4,
+                        opacity: 0.9
+                    }).addTo(map);
+                    
+                    // Update distance with road distance
+                    document.getElementById('distance').textContent = Math.round(route.distance).toLocaleString();
+                } else {
+                    // Fallback to straight lines if routing fails
+                    const routeCoords = waypoints;
+                    routeLine = L.polyline(routeCoords, {
+                        color: '#00d4ff',
+                        weight: 3,
+                        opacity: 0.8
+                    }).addTo(map);
+                    document.getElementById('distance').textContent = '--';
+                }
+                
+                // Update current position marker
+                if (currentMarker) {
+                    map.removeLayer(currentMarker);
+                }
+                currentMarker = L.marker([current.latitude, current.longitude], {
+                    icon: L.divIcon({
+                        className: 'car-marker',
+                        html: '<div style="background:#00d4ff;border:3px solid #fff;border-radius:50%;width:20px;height:20px;box-shadow:0 0 20px rgba(0,212,255,0.5);"></div>',
+                        iconSize: [20, 20],
+                        iconAnchor: [10, 10]
+                    })
+                }).addTo(map);
+                
+                // Fit bounds to show route
+                if (route) {
+                    const bounds = L.latLngBounds(route.geometry);
+                    bounds.extend([DESTINATION.lat, DESTINATION.lng]);
+                    map.fitBounds(bounds, { padding: [50, 50] });
+                }
+                
+                // Location
+                const addr = current.address || {};
+                const locParts = [addr.locality, addr.administrativeArea].filter(Boolean);
+                if (locParts.length > 0) {
+                    document.getElementById('location').textContent = locParts[0];
+                    document.getElementById('location-sub').textContent = locParts[1] || '';
+                    document.getElementById('location-sub').className = 'subvalue';
+                } else {
+                    // Show coordinates at same size
+                    document.getElementById('location').innerHTML = 
+                        `${current.latitude.toFixed(4)}°<br>${current.longitude.toFixed(4)}°`;
+                    document.getElementById('location-sub').textContent = '';
+                }
+                
+                // Time in transit (from known departure time)
+                const now = new Date();
+                const transitMs = now - DEPARTURE_TIME;
+                const duration = formatDuration(transitMs);
+                document.getElementById('time').textContent = duration.value;
+                document.getElementById('time-sub').textContent = duration.unit;
+                
+                // Calculate average speed
+                if (route && route.distance > 0) {
+                    const hoursElapsed = transitMs / 3600000;
+                    const avgSpeed = Math.round(route.distance / hoursElapsed);
+                    document.getElementById('speed-avg').textContent = avgSpeed;
+                    
+                    // Calculate recent speed from last two points if available
+                    if (locations.length >= 2) {
+                        const prev = locations[locations.length - 2];
+                        const curr = locations[locations.length - 1];
+                        if (prev.timestamp && curr.timestamp) {
+                            const timeDiffSeconds = curr.timestamp - prev.timestamp;
+                            const timeDiffHours = timeDiffSeconds / 3600;
+                            if (timeDiffHours > 0.01) {
+                                const dist = haversineDistance(prev.latitude, prev.longitude, curr.latitude, curr.longitude);
+                                const calcSpeed = dist / timeDiffHours;
+                                if (calcSpeed > 2 && calcSpeed < 120) {
+                                    document.getElementById('speed-recent').textContent = Math.round(calcSpeed);
+                                    // Format time between updates
+                                    const mins = Math.floor(timeDiffSeconds / 60);
+                                    const secs = Math.round(timeDiffSeconds % 60);
+                                    if (mins > 0) {
+                                        document.getElementById('speed-recent-sub').textContent = `mph (${mins}m ${secs}s gap)`;
+                                    } else {
+                                        document.getElementById('speed-recent-sub').textContent = `mph (${secs}s gap)`;
+                                    }
+                                } else {
+                                    document.getElementById('speed-recent').textContent = '--';
+                                    document.getElementById('speed-recent-sub').textContent = 'mph';
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                // States crossed (not including current state)
+                const statesVisited = [];
+                let currentState = null;
+                
+                // Get current state from most recent location
+                const currAddr = current.address || {};
+                currentState = currAddr.administrativeArea || currAddr.stateCode;
+                if (currentState && stateAbbreviations[currentState]) {
+                    currentState = stateAbbreviations[currentState];
+                }
+                
+                // Collect all states from history
+                locations.forEach(l => {
+                    const addr = l.address || {};
+                    let state = addr.administrativeArea || addr.stateCode;
+                    if (state) {
+                        const abbrev = stateAbbreviations[state] || state;
+                        if (!statesVisited.includes(abbrev)) {
+                            statesVisited.push(abbrev);
+                        }
+                    }
+                });
+                
+                // Always include FL as starting state
+                if (!statesVisited.includes('FL')) {
+                    statesVisited.unshift('FL');
+                }
+                
+                // Remove current state from "crossed" count (they're still in it)
+                const crossedStates = statesVisited.filter(s => s !== currentState);
+                
+                document.getElementById('states').textContent = crossedStates.length;
+                if (currentState) {
+                    document.getElementById('states-list').textContent = crossedStates.join(' → ') + ` → (${currentState})`; 
+                } else {
+                    document.getElementById('states-list').textContent = crossedStates.join(' → ');
+                }
+                
+                // Last update
+                if (current.timestamp) {
+                    const lastUpdate = new Date(current.timestamp * 1000);
+                    document.getElementById('last-update').textContent = lastUpdate.toLocaleString();
+                } else if (current.recorded_at) {
+                    document.getElementById('last-update').textContent = new Date(current.recorded_at).toLocaleString();
+                }
+                
+            } catch (error) {
+                console.error('Error loading location data:', error);
+            }
+        }
+        
+        // Initialize
+        initMap();
+        updateTracker();
+        
+        // Auto-refresh with visual feedback
+        let refreshCount = 0;
+        setInterval(() => {
+            refreshCount++;
+            const dot = document.getElementById('status-dot');
+            const statusText = document.getElementById('status-text');
+            
+            // Flash the dot to show refresh is happening
+            dot.style.background = '#ffaa00';
+            statusText.textContent = 'Refreshing...';
+            
+            updateTracker().then(() => {
+                dot.style.background = '#00ff88';
+                statusText.textContent = 'Tracking Active';
+                document.getElementById('page-refresh').textContent = new Date().toLocaleTimeString();
+            }).catch(err => {
+                dot.style.background = '#ff4444';
+                statusText.textContent = 'Error';
+                console.error(err);
+            });
+        }, REFRESH_INTERVAL);
+        
+        // Initial page refresh timestamp
+        document.getElementById('page-refresh').textContent = new Date().toLocaleTimeString();
+    </script>
+</body>
+</html>

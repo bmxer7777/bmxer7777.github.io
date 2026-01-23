@@ -1,0 +1,1784 @@
+{
+  "airtag_name": "ERAUBCU LYRIQ",
+  "locations": [
+    {
+      "latitude": 30.756937499999992,
+      "longitude": -85.6307571,
+      "accuracy": 40.91575792325157,
+      "timestamp": 1769096875.0,
+      "recorded_at": "2026-01-22T11:25:09.612186"
+    },
+    {
+      "latitude": 30.706221300000003,
+      "longitude": -86.1628043,
+      "accuracy": 12.059311685034992,
+      "timestamp": 1769098667.0,
+      "recorded_at": "2026-01-22T11:43:14.047806"
+    },
+    {
+      "latitude": 30.733778734830047,
+      "longitude": -86.34844311497824,
+      "accuracy": 19.887357594060774,
+      "timestamp": 1769100509.0,
+      "recorded_at": "2026-01-22T11:53:25.655887"
+    },
+    {
+      "latitude": 30.733795086847383,
+      "longitude": -86.34844161030558,
+      "accuracy": 20.84452453377331,
+      "timestamp": 1769100662.0,
+      "recorded_at": "2026-01-22T12:03:37.003558"
+    },
+    {
+      "latitude": 30.7178873,
+      "longitude": -86.4468824,
+      "accuracy": 12.294987880134796,
+      "timestamp": 1769101363.0,
+      "recorded_at": "2026-01-22T12:18:56.107508"
+    },
+    {
+      "latitude": 30.556699899999995,
+      "longitude": -87.0488292,
+      "accuracy": 22.087630869112267,
+      "timestamp": 1769103440.0,
+      "recorded_at": "2026-01-22T13:03:16.911621"
+    },
+    {
+      "latitude": 30.649716700000003,
+      "longitude": -87.7213401,
+      "accuracy": 12.466906019730693,
+      "timestamp": 1769105875.0,
+      "recorded_at": "2026-01-22T13:33:35.598418"
+    },
+    {
+      "latitude": 30.6596177,
+      "longitude": -87.8221449,
+      "accuracy": 13.540084647576334,
+      "timestamp": 1769106206.0,
+      "recorded_at": "2026-01-22T13:38:38.908509"
+    },
+    {
+      "latitude": 30.510509399999997,
+      "longitude": -88.2894018,
+      "accuracy": 12.651702591922223,
+      "timestamp": 1769108180.0,
+      "recorded_at": "2026-01-22T14:03:54.723960"
+    },
+    {
+      "latitude": 30.4846627,
+      "longitude": -88.3759648,
+      "accuracy": 14.726095358575273,
+      "timestamp": 1769108473.0,
+      "address": {
+        "subAdministrativeArea": "Mobile County",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "AL",
+        "administrativeArea": "Alabama",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Grand Bay, AL  36541",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Grand Bay, AL  36541",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Grand Bay",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T14:25:38.830514"
+    },
+    {
+      "latitude": 30.45967790290393,
+      "longitude": -88.44646540793391,
+      "accuracy": 16.099227267642945,
+      "timestamp": 1769112027.0,
+      "address": {
+        "subAdministrativeArea": "Jackson County",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "MS",
+        "administrativeArea": "Mississippi",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Moss Point, MS  39562",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Moss Point, MS  39562",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Moss Point",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T15:15:32.930245"
+    },
+    {
+      "latitude": 30.451140100000003,
+      "longitude": -88.758192,
+      "accuracy": 20.46156775977144,
+      "timestamp": 1769113041.0,
+      "address": {
+        "subAdministrativeArea": "Jackson County",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "MS",
+        "administrativeArea": "Mississippi",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Vancleave, MS  39565",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Vancleave, MS  39565",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Vancleave",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T15:37:07.409363"
+    },
+    {
+      "latitude": 30.454356899999997,
+      "longitude": -88.8459083,
+      "accuracy": 12.294987880134796,
+      "timestamp": 1769113323.0,
+      "address": {
+        "subAdministrativeArea": "Jackson County",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "MS",
+        "administrativeArea": "Mississippi",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Biloxi, MS  39532",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Biloxi, MS  39532",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Biloxi",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T16:08:11.257785"
+    },
+    {
+      "latitude": 30.303965500000004,
+      "longitude": -89.6391383,
+      "accuracy": 14.726095358575273,
+      "timestamp": 1769116007.0,
+      "address": {
+        "subAdministrativeArea": "Hancock County",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "MS",
+        "administrativeArea": "Mississippi",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Pearlington, MS  39572",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Pearlington, MS  39572",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Pearlington",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T16:13:21.798291"
+    },
+    {
+      "latitude": 30.3342243,
+      "longitude": -89.8850003,
+      "accuracy": 14.726095358575273,
+      "timestamp": 1769116813.0,
+      "address": {
+        "subAdministrativeArea": "St. Tammany Parish",
+        "label": "I-12 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "I-12 W",
+        "formattedAddressLines": [
+          "I-12 W",
+          "Lacombe, LA  70445",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-12 W, Lacombe, LA  70445",
+        "fullThroroughfare": "I-12 W",
+        "areaOfInterest": [],
+        "locality": "Lacombe",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T16:39:15.100450"
+    },
+    {
+      "latitude": 30.4231496,
+      "longitude": -90.0591919,
+      "accuracy": 12.294987880134796,
+      "timestamp": 1769117450.0,
+      "address": {
+        "subAdministrativeArea": "St. Tammany Parish",
+        "label": "I-12 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "I-12 W",
+        "formattedAddressLines": [
+          "I-12 W",
+          "Covington, LA  70433",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-12 W, Covington, LA  70433",
+        "fullThroroughfare": "I-12 W",
+        "areaOfInterest": [],
+        "locality": "Covington",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T16:54:47.248882"
+    },
+    {
+      "latitude": 30.474319900000005,
+      "longitude": -90.7513324,
+      "accuracy": 15.266969369965606,
+      "timestamp": 1769119729.0,
+      "address": {
+        "subAdministrativeArea": "Livingston Parish",
+        "label": "I-12 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "I-12 W",
+        "formattedAddressLines": [
+          "I-12 W",
+          "Livingston, LA  70754",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-12 W, Livingston, LA  70754",
+        "fullThroroughfare": "I-12 W",
+        "areaOfInterest": [],
+        "locality": "Livingston",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T17:25:30.446743"
+    },
+    {
+      "latitude": 30.469057299999985,
+      "longitude": -90.8713206,
+      "accuracy": 12.379394758486601,
+      "timestamp": 1769120114.0,
+      "address": {
+        "subAdministrativeArea": "Livingston Parish",
+        "label": "I-12 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "I-12 W",
+        "formattedAddressLines": [
+          "I-12 W",
+          "Walker, LA  70785",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-12 W, Walker, LA  70785",
+        "fullThroroughfare": "I-12 W",
+        "areaOfInterest": [],
+        "locality": "Walker",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T17:35:51.576542"
+    },
+    {
+      "latitude": 30.426584500000022,
+      "longitude": -91.1673552,
+      "accuracy": 19.7325033965037,
+      "timestamp": 1769121383.0,
+      "address": {
+        "subAdministrativeArea": "East Baton Rouge Parish",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Baton Rouge, LA  70808",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Baton Rouge, LA  70808",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Baton Rouge",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T17:41:02.365379"
+    },
+    {
+      "latitude": 30.443654599999984,
+      "longitude": -91.2094299,
+      "accuracy": 14.090327324539455,
+      "timestamp": 1769121640.0,
+      "address": {
+        "subAdministrativeArea": "West Baton Rouge Parish",
+        "label": "S Alexander Ave",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "S Alexander Ave",
+        "formattedAddressLines": [
+          "S Alexander Ave",
+          "Port Allen, LA  70767",
+          "United States"
+        ],
+        "mapItemFullAddress": "S Alexander Ave, Port Allen, LA  70767",
+        "fullThroroughfare": "S Alexander Ave",
+        "areaOfInterest": [],
+        "locality": "Port Allen",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T17:51:23.442218"
+    },
+    {
+      "latitude": 30.429892000000013,
+      "longitude": -91.399252,
+      "accuracy": 26.137268408481148,
+      "timestamp": 1769122369.0,
+      "address": {
+        "subAdministrativeArea": "West Baton Rouge Parish",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Port Allen, LA  70767",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Port Allen, LA  70767",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Port Allen",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T18:01:44.469327"
+    },
+    {
+      "latitude": 30.416085099999997,
+      "longitude": -91.4380398,
+      "accuracy": 13.176547355160208,
+      "timestamp": 1769122664.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T18:22:26.422066"
+    },
+    {
+      "latitude": 30.416393928382025,
+      "longitude": -91.43771117844874,
+      "accuracy": 14.223404191499554,
+      "timestamp": 1769124129.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T18:27:36.911684"
+    },
+    {
+      "latitude": 30.416392816305475,
+      "longitude": -91.43771638102055,
+      "accuracy": 12.813711997168083,
+      "timestamp": 1769125237.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T18:48:18.838015"
+    },
+    {
+      "latitude": 30.41640419314601,
+      "longitude": -91.43769802544142,
+      "accuracy": 13.143601892255429,
+      "timestamp": 1769126169.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T19:00:12.054139"
+    },
+    {
+      "latitude": 30.416395000000012,
+      "longitude": -91.4377259,
+      "accuracy": 11.811730886017173,
+      "timestamp": 1769126356.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T19:15:43.554813"
+    },
+    {
+      "latitude": 30.416858399999995,
+      "longitude": -91.4361754,
+      "accuracy": 51.27325603017673,
+      "timestamp": 1769127400.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T19:31:15.061827"
+    },
+    {
+      "latitude": 30.416573476633435,
+      "longitude": -91.43678777290249,
+      "accuracy": 44.86683820216055,
+      "timestamp": 1769128392.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T19:46:46.511389"
+    },
+    {
+      "latitude": 30.416394271307148,
+      "longitude": -91.43768935430151,
+      "accuracy": 13.66095602653171,
+      "timestamp": 1769129376.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T20:02:17.981357"
+    },
+    {
+      "latitude": 30.416357616955946,
+      "longitude": -91.43766806079007,
+      "accuracy": 14.70428752441226,
+      "timestamp": 1769130619.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T20:17:49.434764"
+    },
+    {
+      "latitude": 30.41637729053221,
+      "longitude": -91.4376794897044,
+      "accuracy": 14.144297764763282,
+      "timestamp": 1769130619.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T20:33:20.870417"
+    },
+    {
+      "latitude": 30.4163699297718,
+      "longitude": -91.43766504689528,
+      "accuracy": 15.466272783913048,
+      "timestamp": 1769132609.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T20:48:52.473825"
+    },
+    {
+      "latitude": 30.416375117994992,
+      "longitude": -91.43767522689149,
+      "accuracy": 14.534480299079448,
+      "timestamp": 1769132609.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T21:04:23.954316"
+    },
+    {
+      "latitude": 30.416381822650237,
+      "longitude": -91.43768573139329,
+      "accuracy": 14.906044296383543,
+      "timestamp": 1769133649.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T21:19:55.386759"
+    },
+    {
+      "latitude": 30.416426862070676,
+      "longitude": -91.43769820930207,
+      "accuracy": 14.502696643100647,
+      "timestamp": 1769134319.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T21:35:26.891717"
+    },
+    {
+      "latitude": 30.416428869250876,
+      "longitude": -91.43771004323186,
+      "accuracy": 14.640298628315524,
+      "timestamp": 1769136325.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T21:50:58.765776"
+    },
+    {
+      "latitude": 30.416431879448407,
+      "longitude": -91.43771086211827,
+      "accuracy": 14.547268682486335,
+      "timestamp": 1769137217.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T22:06:30.345720"
+    },
+    {
+      "latitude": 30.416430623065086,
+      "longitude": -91.43769823116446,
+      "accuracy": 14.847100339787156,
+      "timestamp": 1769137334.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T22:22:01.869926"
+    },
+    {
+      "latitude": 30.416433242480032,
+      "longitude": -91.43770146269507,
+      "accuracy": 15.552516351052265,
+      "timestamp": 1769138442.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T22:37:33.351589"
+    },
+    {
+      "latitude": 30.416436658947728,
+      "longitude": -91.43765929176857,
+      "accuracy": 17.98964602586487,
+      "timestamp": 1769139614.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T22:53:04.780649"
+    },
+    {
+      "latitude": 30.416458568356312,
+      "longitude": -91.43759607984462,
+      "accuracy": 19.91928635972711,
+      "timestamp": 1769140649.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T23:08:36.476036"
+    },
+    {
+      "latitude": 30.416417362985456,
+      "longitude": -91.43758785835068,
+      "accuracy": 21.35406167688435,
+      "timestamp": 1769141891.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T23:24:08.001929"
+    },
+    {
+      "latitude": 30.416412415614552,
+      "longitude": -91.43755112900857,
+      "accuracy": 23.037129566770467,
+      "timestamp": 1769142503.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T23:39:39.442110"
+    },
+    {
+      "latitude": 30.41640011426526,
+      "longitude": -91.43761512418493,
+      "accuracy": 22.05758954303787,
+      "timestamp": 1769143459.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-22T23:55:10.872202"
+    },
+    {
+      "latitude": 30.416380220051227,
+      "longitude": -91.4376442465087,
+      "accuracy": 19.965285322124235,
+      "timestamp": 1769144449.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T00:10:42.733641"
+    },
+    {
+      "latitude": 30.41685124759923,
+      "longitude": -91.43596569535475,
+      "accuracy": 69.74083493215427,
+      "timestamp": 1769145389.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T00:26:14.196446"
+    },
+    {
+      "latitude": 30.416387350285337,
+      "longitude": -91.43764327079506,
+      "accuracy": 21.389060925021326,
+      "timestamp": 1769146207.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T00:41:45.670361"
+    },
+    {
+      "latitude": 30.416899038876586,
+      "longitude": -91.43631222076169,
+      "accuracy": 52.68787162659867,
+      "timestamp": 1769146969.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T00:57:17.270100"
+    },
+    {
+      "latitude": 30.41672278154466,
+      "longitude": -91.43626611964795,
+      "accuracy": 44.07629794681847,
+      "timestamp": 1769148346.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T01:12:49.153834"
+    },
+    {
+      "latitude": 30.416805983602206,
+      "longitude": -91.43622432639891,
+      "accuracy": 51.8303352829624,
+      "timestamp": 1769148346.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T01:23:10.315496"
+    },
+    {
+      "latitude": 30.416714919945214,
+      "longitude": -91.43623148607529,
+      "accuracy": 47.51260531625587,
+      "timestamp": 1769149643.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T01:38:42.183288"
+    },
+    {
+      "latitude": 30.416743139662525,
+      "longitude": -91.43622016383443,
+      "accuracy": 49.518080184014,
+      "timestamp": 1769150885.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T01:54:15.544261"
+    },
+    {
+      "latitude": 30.416825010465704,
+      "longitude": -91.43628100797511,
+      "accuracy": 54.83943659503195,
+      "timestamp": 1769152112.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T02:09:47.179489"
+    },
+    {
+      "latitude": 30.416704204417503,
+      "longitude": -91.43631654839413,
+      "accuracy": 56.767933477228766,
+      "timestamp": 1769152876.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T02:25:18.719230"
+    },
+    {
+      "latitude": 30.416765958520568,
+      "longitude": -91.43631167846372,
+      "accuracy": 55.940664003311525,
+      "timestamp": 1769153407.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T02:40:50.330628"
+    },
+    {
+      "latitude": 30.41674875498268,
+      "longitude": -91.43627119560364,
+      "accuracy": 59.27345831852989,
+      "timestamp": 1769154413.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T02:56:21.931878"
+    },
+    {
+      "latitude": 30.416799572996815,
+      "longitude": -91.43622506770116,
+      "accuracy": 51.97523528349311,
+      "timestamp": 1769155646.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T03:11:53.446195"
+    },
+    {
+      "latitude": 30.416681745472097,
+      "longitude": -91.43623308563345,
+      "accuracy": 56.57824336549647,
+      "timestamp": 1769156221.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T03:27:24.903705"
+    },
+    {
+      "latitude": 30.416660664921988,
+      "longitude": -91.43630973464252,
+      "accuracy": 57.4315399931558,
+      "timestamp": 1769157355.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T03:42:56.416767"
+    },
+    {
+      "latitude": 30.41664646562518,
+      "longitude": -91.43631609791386,
+      "accuracy": 58.21937914129296,
+      "timestamp": 1769158169.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T03:58:27.854227"
+    },
+    {
+      "latitude": 30.416345510733176,
+      "longitude": -91.43652893384123,
+      "accuracy": 70.51720802215155,
+      "timestamp": 1769159306.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T04:13:59.307063"
+    },
+    {
+      "latitude": 30.416284024229565,
+      "longitude": -91.43653677620459,
+      "accuracy": 72.90310445092999,
+      "timestamp": 1769160195.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T04:29:30.744030"
+    },
+    {
+      "latitude": 30.41614295858192,
+      "longitude": -91.43664542764844,
+      "accuracy": 69.18438854435345,
+      "timestamp": 1769161057.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T04:45:02.184414"
+    },
+    {
+      "latitude": 30.41638151733358,
+      "longitude": -91.43651269691334,
+      "accuracy": 59.86901104382836,
+      "timestamp": 1769161941.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T05:00:33.655741"
+    },
+    {
+      "latitude": 30.416406656511985,
+      "longitude": -91.43649455803546,
+      "accuracy": 60.12050928825106,
+      "timestamp": 1769162220.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "76740 Garner Ln",
+        "streetAddress": "76740",
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "Garner Ln",
+        "formattedAddressLines": [
+          "76740 Garner Ln",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "76740 Garner Ln, Grosse Tete, LA  70740",
+        "fullThroroughfare": "76740 Garner Ln",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T05:16:05.128248"
+    },
+    {
+      "latitude": 30.416375766099776,
+      "longitude": -91.43766546023879,
+      "accuracy": 17.569961889434417,
+      "timestamp": 1769163196.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T05:31:36.593408"
+    },
+    {
+      "latitude": 30.41638599385199,
+      "longitude": -91.4376569310118,
+      "accuracy": 17.528591622862038,
+      "timestamp": 1769165846.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T06:02:39.498487"
+    },
+    {
+      "latitude": 30.416397454643874,
+      "longitude": -91.43770607217893,
+      "accuracy": 17.26586915383322,
+      "timestamp": 1769167086.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "70740",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "Grosse Tete, LA  70740",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T06:33:42.366842"
+    },
+    {
+      "latitude": 30.418381299999993,
+      "longitude": -91.4344939,
+      "accuracy": 15.66151941671351,
+      "timestamp": 1769168081.0,
+      "address": {
+        "subAdministrativeArea": "Iberville Parish",
+        "label": "I-10 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "I-10 E",
+        "formattedAddressLines": [
+          "I-10 E",
+          "Grosse Tete, LA  70740",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 E, Grosse Tete, LA  70740",
+        "fullThroroughfare": "I-10 E",
+        "areaOfInterest": [],
+        "locality": "Grosse Tete",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T07:04:45.266934"
+    },
+    {
+      "latitude": 30.25013310000001,
+      "longitude": -92.2305806,
+      "accuracy": 27.984084529349467,
+      "timestamp": 1769170953.0,
+      "address": {
+        "subAdministrativeArea": "Acadia Parish",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Rayne, LA  70578",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Rayne, LA  70578",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Rayne",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T07:30:38.021038"
+    },
+    {
+      "latitude": 30.2492411,
+      "longitude": -93.0170363,
+      "accuracy": 16.309447248285075,
+      "timestamp": 1769173543.0,
+      "address": {
+        "subAdministrativeArea": "Calcasieu Parish",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Iowa, LA  70647",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Iowa, LA  70647",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Iowa",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T08:32:44.088069"
+    },
+    {
+      "latitude": 30.237581199999987,
+      "longitude": -93.2733302,
+      "accuracy": 13.540084647576334,
+      "timestamp": 1769174467.0,
+      "address": {
+        "subAdministrativeArea": "Calcasieu Parish",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Westlake, LA  70669",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Westlake, LA  70669",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Westlake",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T09:03:46.979651"
+    },
+    {
+      "latitude": 30.056743199999993,
+      "longitude": -94.1379044,
+      "accuracy": 12.135050677990801,
+      "timestamp": 1769177768.0,
+      "address": {
+        "subAdministrativeArea": "Jefferson County",
+        "label": "IH-10 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 E",
+        "formattedAddressLines": [
+          "IH-10 E",
+          "Beaumont, TX  77701",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 E, Beaumont, TX  77701",
+        "fullThroroughfare": "IH-10 E",
+        "areaOfInterest": [],
+        "locality": "Beaumont",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T09:34:49.923779"
+    },
+    {
+      "latitude": 29.8334776,
+      "longitude": -94.5246927,
+      "accuracy": 13.805273310179452,
+      "timestamp": 1769179524.0,
+      "address": {
+        "subAdministrativeArea": "Chambers County",
+        "label": "IH-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 W",
+        "formattedAddressLines": [
+          "IH-10 W",
+          "Winnie, TX  77665",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 W, Winnie, TX  77665",
+        "fullThroroughfare": "IH-10 W",
+        "areaOfInterest": [],
+        "locality": "Winnie",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T10:05:53.203835"
+    },
+    {
+      "latitude": 29.7745402,
+      "longitude": -95.2562048,
+      "accuracy": 12.955174466501472,
+      "timestamp": 1769182085.0,
+      "address": {
+        "subAdministrativeArea": "Harris County",
+        "label": "IH-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 W",
+        "formattedAddressLines": [
+          "IH-10 W",
+          "Houston, TX  77013",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 W, Houston, TX  77013",
+        "fullThroroughfare": "IH-10 W",
+        "areaOfInterest": [],
+        "locality": "Houston",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T10:36:56.711936"
+    },
+    {
+      "latitude": 29.809396999999997,
+      "longitude": -95.3191211,
+      "accuracy": 12.749229005912872,
+      "timestamp": 1769183434.0,
+      "address": {
+        "subAdministrativeArea": "Harris County",
+        "label": "IH-610 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-610 W",
+        "formattedAddressLines": [
+          "IH-610 W",
+          "Houston, TX  77026",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-610 W, Houston, TX  77026",
+        "fullThroroughfare": "IH-610 W",
+        "areaOfInterest": [],
+        "locality": "Houston",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T11:02:50.346726"
+    }
+  ]
+}
