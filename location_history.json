@@ -1779,6 +1779,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-23T11:02:50.346726"
+    },
+    {
+      "latitude": 29.7851826,
+      "longitude": -95.6963261,
+      "accuracy": 12.749229005912872,
+      "timestamp": 1769185086.0,
+      "address": {
+        "subAdministrativeArea": "Harris County",
+        "label": "IH-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 W",
+        "formattedAddressLines": [
+          "IH-10 W",
+          "Houston, TX  77094",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 W, Houston, TX  77094",
+        "fullThroroughfare": "IH-10 W",
+        "areaOfInterest": [],
+        "locality": "Houston",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T11:49:41.038738"
     }
   ]
 }
