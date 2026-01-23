@@ -1857,6 +1857,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-23T12:06:01.329593"
+    },
+    {
+      "latitude": 29.6936022,
+      "longitude": -96.5367819,
+      "accuracy": 12.850342323448,
+      "timestamp": 1769188118.0,
+      "address": {
+        "subAdministrativeArea": "Colorado County",
+        "label": "IH-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 W",
+        "formattedAddressLines": [
+          "IH-10 W",
+          "Columbus, TX  78934",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 W, Columbus, TX  78934",
+        "fullThroroughfare": "IH-10 W",
+        "areaOfInterest": [],
+        "locality": "Columbus",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T12:10:43.799969"
     }
   ]
 }
