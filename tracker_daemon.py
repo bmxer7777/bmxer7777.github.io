@@ -3,6 +3,7 @@
 LYRIQ Tracker Daemon
 Runs the location extractor every 5 minutes to keep location_history.json updated.
 Forces Find My to refresh in the background.
+Auto-pushes to GitHub when there's a new location.
 
 Usage:
     python3 tracker_daemon.py
@@ -21,9 +22,10 @@ from datetime import datetime
 from pathlib import Path
 
 # Configuration
-POLL_INTERVAL = 300  # 5 minutes in seconds
+POLL_INTERVAL = 60  # 5 minutes in seconds
 SCRIPT_DIR = Path(__file__).parent
 EXTRACTOR_SCRIPT = SCRIPT_DIR / "extract_location.py"
+GITHUB_PUSH_ENABLED = True  # Set to False to disable auto-push
 
 
 def log(message):
@@ -33,8 +35,61 @@ def log(message):
     sys.stdout.flush()
 
 
+def push_to_github():
+    """Commit and push location_history.json to GitHub."""
+    if not GITHUB_PUSH_ENABLED:
+        return
+    
+    # Check if this is a git repo
+    if not (SCRIPT_DIR / ".git").exists():
+        log("  ⚠ Not a git repo, skipping push")
+        return
+    
+    try:
+        # Add the JSON file
+        subprocess.run(
+            ["git", "add", "location_history.json"],
+            cwd=SCRIPT_DIR,
+            capture_output=True,
+            timeout=30
+        )
+        
+        # Commit with timestamp
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
+        result = subprocess.run(
+            ["git", "commit", "-m", f"Location update {timestamp}"],
+            cwd=SCRIPT_DIR,
+            capture_output=True,
+            text=True,
+            timeout=30
+        )
+        
+        if "nothing to commit" in result.stdout:
+            log("  ○ No changes to push")
+            return
+        
+        # Push to GitHub
+        result = subprocess.run(
+            ["git", "push"],
+            cwd=SCRIPT_DIR,
+            capture_output=True,
+            text=True,
+            timeout=60
+        )
+        
+        if result.returncode == 0:
+            log("  ✓ Pushed to GitHub")
+        else:
+            log(f"  ⚠ Push failed: {result.stderr[:100]}")
+            
+    except subprocess.TimeoutExpired:
+        log("  ⚠ Git operation timed out")
+    except Exception as e:
+        log(f"  ⚠ Git error: {e}")
+
+
 def run_extractor():
-    """Run the location extractor script."""
+    """Run the location extractor script. Returns True if new location recorded."""
     try:
         result = subprocess.run(
             [sys.executable, str(EXTRACTOR_SCRIPT)],
@@ -44,8 +99,11 @@ def run_extractor():
             timeout=60
         )
         
+        new_location = False
+        
         if "New location recorded" in result.stdout:
             log("✓ New location recorded!")
+            new_location = True
             for line in result.stdout.split('\n'):
                 if any(x in line for x in ['Lat:', 'Lon:', 'Last seen:', 'Location:']):
                     log(f"  {line.strip()}")
@@ -59,11 +117,15 @@ def run_extractor():
         
         if result.stderr:
             log(f"⚠ Warnings: {result.stderr[:200]}")
+        
+        return new_location
             
     except subprocess.TimeoutExpired:
         log("⚠ Extractor timed out")
+        return False
     except Exception as e:
         log(f"⚠ Error running extractor: {e}")
+        return False
 
 
 def refresh_findmy_cache():
@@ -104,6 +166,7 @@ def main():
     log("LYRIQ Tracker Daemon Starting")
     log(f"Poll interval: {POLL_INTERVAL} seconds ({POLL_INTERVAL // 60} minutes)")
     log(f"Extractor: {EXTRACTOR_SCRIPT}")
+    log(f"GitHub push: {'Enabled' if GITHUB_PUSH_ENABLED else 'Disabled'}")
     log("=" * 50)
     log("")
     log("Press Ctrl+C to stop")
@@ -113,7 +176,9 @@ def main():
     log("Running initial check...")
     refresh_findmy_cache()
     time.sleep(3)
-    run_extractor()
+    new_location = run_extractor()
+    if new_location:
+        push_to_github()
     
     # Then loop forever
     while True:
@@ -125,7 +190,10 @@ def main():
         time.sleep(5)
         
         log("Extracting location...")
-        run_extractor()
+        new_location = run_extractor()
+        
+        if new_location:
+            push_to_github()
 
 
 if __name__ == "__main__":
