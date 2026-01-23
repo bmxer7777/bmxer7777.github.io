@@ -1987,6 +1987,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-23T14:41:22.061203"
+    },
+    {
+      "latitude": 29.4996376,
+      "longitude": -98.1904606,
+      "accuracy": 11.986259464394749,
+      "timestamp": 1769198235.0,
+      "address": {
+        "subAdministrativeArea": "Bexar County",
+        "label": "IH-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 W",
+        "formattedAddressLines": [
+          "IH-10 W",
+          "Schertz, TX  78154",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 W, Schertz, TX  78154",
+        "fullThroroughfare": "IH-10 W",
+        "areaOfInterest": [],
+        "locality": "Schertz",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T15:03:50.420110"
     }
   ]
 }
