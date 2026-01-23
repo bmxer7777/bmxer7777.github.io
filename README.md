@@ -2,7 +2,7 @@
 
 Real-time tracking for Embry-Riddle Aeronautical University's Cadillac LYRIQ on its journey to CARB in Riverside, CA.
 
-🚗 **[View Live Tracker](https://YOUR_USERNAME.github.io/lyriq-tracker/)**
+🚗 **[View Live Tracker](https://bmxer7777.github.io/lyriq-tracker/)**
 
 ## About
 
