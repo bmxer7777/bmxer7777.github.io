@@ -2143,6 +2143,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-23T16:55:17.179979"
+    },
+    {
+      "latitude": 30.2585762,
+      "longitude": -99.4687376,
+      "accuracy": 38.76124553248656,
+      "timestamp": 1769205035.0,
+      "address": {
+        "subAdministrativeArea": "Kerr County",
+        "label": "IH-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 W",
+        "formattedAddressLines": [
+          "IH-10 W",
+          "Mountain Home, TX  78058",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 W, Mountain Home, TX  78058",
+        "fullThroroughfare": "IH-10 W",
+        "areaOfInterest": [],
+        "locality": "Mountain Home",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T17:41:01.092216"
     }
   ]
 }
