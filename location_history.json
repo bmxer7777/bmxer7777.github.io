@@ -2013,6 +2013,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-23T15:03:50.420110"
+    },
+    {
+      "latitude": 29.464657499999994,
+      "longitude": -98.2891707,
+      "accuracy": 310.88771899353173,
+      "timestamp": 1769198621.0,
+      "address": {
+        "subAdministrativeArea": "Bexar County",
+        "label": "W Weichold Rd",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "W Weichold Rd",
+        "formattedAddressLines": [
+          "W Weichold Rd",
+          "Converse, TX  78109",
+          "United States"
+        ],
+        "mapItemFullAddress": "W Weichold Rd, Converse, TX  78109",
+        "fullThroroughfare": "W Weichold Rd",
+        "areaOfInterest": [],
+        "locality": "San Antonio",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T15:26:08.079412"
     }
   ]
 }
