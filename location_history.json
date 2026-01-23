@@ -1935,6 +1935,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-23T13:55:05.171831"
+    },
+    {
+      "latitude": 29.692216300000002,
+      "longitude": -97.1890106,
+      "accuracy": 13.670284679040341,
+      "timestamp": 1769194545.0,
+      "address": {
+        "subAdministrativeArea": "Fayette County",
+        "label": "IH-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 W",
+        "formattedAddressLines": [
+          "IH-10 W",
+          "Flatonia, TX  78941",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 W, Flatonia, TX  78941",
+        "fullThroroughfare": "IH-10 W",
+        "areaOfInterest": [],
+        "locality": "Flatonia",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T14:10:20.413645"
     }
   ]
 }
