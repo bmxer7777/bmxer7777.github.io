@@ -2117,6 +2117,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-23T16:24:47.612284"
+    },
+    {
+      "latitude": 30.034489099999995,
+      "longitude": -98.9776398,
+      "accuracy": 11.986259464394749,
+      "timestamp": 1769203087.0,
+      "address": {
+        "subAdministrativeArea": "Kerr County",
+        "label": "IH-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 W",
+        "formattedAddressLines": [
+          "IH-10 W",
+          "Comfort, TX  78013",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 W, Comfort, TX  78013",
+        "fullThroroughfare": "IH-10 W",
+        "areaOfInterest": [],
+        "locality": "Comfort",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T16:55:17.179979"
     }
   ]
 }
