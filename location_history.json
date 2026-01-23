@@ -2039,6 +2039,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-23T15:26:08.079412"
+    },
+    {
+      "latitude": 29.443174499999994,
+      "longitude": -98.5144118,
+      "accuracy": 205.06134375750705,
+      "timestamp": 1769199882.0,
+      "address": {
+        "subAdministrativeArea": "Bexar County",
+        "label": "IH-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 W",
+        "formattedAddressLines": [
+          "IH-10 W",
+          "San Antonio, TX  78201",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 W, San Antonio, TX  78201",
+        "fullThroroughfare": "IH-10 W",
+        "areaOfInterest": [],
+        "locality": "San Antonio",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T15:36:42.023133"
     }
   ]
 }
