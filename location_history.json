@@ -1883,6 +1883,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-23T12:10:43.799969"
+    },
+    {
+      "latitude": 29.691809999999997,
+      "longitude": -97.0077795,
+      "accuracy": 21.65883308989062,
+      "timestamp": 1769189686.0,
+      "address": {
+        "subAdministrativeArea": "Fayette County",
+        "label": "IH-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 W",
+        "formattedAddressLines": [
+          "IH-10 W",
+          "Schulenburg, TX  78956",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 W, Schulenburg, TX  78956",
+        "fullThroroughfare": "IH-10 W",
+        "areaOfInterest": [],
+        "locality": "Schulenburg",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T12:51:46.456434"
     }
   ]
 }
