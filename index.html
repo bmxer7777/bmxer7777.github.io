@@ -331,20 +331,6 @@
             accent-color: #00d4ff;
         }
         
-        /* Custom markers */
-        .team-marker {
-            background: #22c55e;
-            border: 2px solid #fff;
-            border-radius: 50%;
-            width: 12px;
-            height: 12px;
-        }
-        
-        .overnight-marker {
-            font-size: 18px;
-            text-shadow: 0 0 10px rgba(255, 200, 0, 0.5);
-        }
-        
         .leaflet-popup-content-wrapper {
             background: #1a1a2e;
             color: #fff;
@@ -353,6 +339,18 @@
         
         .leaflet-popup-tip {
             background: #1a1a2e;
+        }
+        
+        .team-tooltip {
+            background: #1a1a2e;
+            border: 1px solid #333;
+            color: #fff;
+            border-radius: 6px;
+            padding: 5px 10px;
+        }
+        
+        .team-tooltip::before {
+            border-top-color: #1a1a2e;
         }
     </style>
 </head>
@@ -395,10 +393,6 @@
                     <input type="checkbox" id="toggle-teams" checked>
                     Other EcoCAR Teams
                 </label>
-                <label>
-                    <input type="checkbox" id="toggle-stops" checked>
-                    Overnight Stops
-                </label>
             </div>
         </div>
         
@@ -410,9 +404,8 @@
                     <thead>
                         <tr>
                             <th>State</th>
-                            <th>Time</th>
-                            <th>Distance</th>
-                            <th>Entry</th>
+                            <th>Time in State</th>
+                            <th>Entry Time</th>
                         </tr>
                     </thead>
                     <tbody id="splits-body">
@@ -426,21 +419,6 @@
             <div class="data-panel">
                 <h2>Journey Statistics</h2>
                 <div class="journey-stats">
-                    <div class="journey-stat-card">
-                        <div class="label">Total Stops</div>
-                        <div class="value" id="stat-stops">--</div>
-                        <div class="detail" id="stat-stops-detail"></div>
-                    </div>
-                    <div class="journey-stat-card">
-                        <div class="label">Longest Driving Stretch</div>
-                        <div class="value" id="stat-longest">--</div>
-                        <div class="detail" id="stat-longest-detail"></div>
-                    </div>
-                    <div class="journey-stat-card">
-                        <div class="label">Fastest State</div>
-                        <div class="value" id="stat-fastest">--</div>
-                        <div class="detail" id="stat-fastest-detail"></div>
-                    </div>
                     <div class="journey-stat-card">
                         <div class="label">Total GPS Pings</div>
                         <div class="value" id="stat-pings">--</div>
@@ -561,9 +539,7 @@
         let currentMarker;
         let destinationMarker;
         let teamMarkers = [];
-        let overnightMarkers = [];
         let teamsLayerVisible = true;
-        let stopsLayerVisible = true;
         
         // Tab switching
         document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -583,14 +559,6 @@
             teamsLayerVisible = e.target.checked;
             teamMarkers.forEach(m => {
                 if (teamsLayerVisible) m.addTo(map);
-                else map.removeLayer(m);
-            });
-        });
-        
-        document.getElementById('toggle-stops').addEventListener('change', (e) => {
-            stopsLayerVisible = e.target.checked;
-            overnightMarkers.forEach(m => {
-                if (stopsLayerVisible) m.addTo(map);
                 else map.removeLayer(m);
             });
         });
@@ -616,14 +584,18 @@
             
             // Add team markers
             ECOCAR_TEAMS.forEach(team => {
-                const marker = L.marker([team.lat, team.lng], {
-                    icon: L.divIcon({
-                        className: 'team-marker',
-                        html: '<div style="background:#22c55e;border:2px solid #fff;border-radius:50%;width:12px;height:12px;"></div>',
-                        iconSize: [12, 12],
-                        iconAnchor: [6, 6]
-                    })
-                }).bindPopup(`<b>${team.name}</b><br>${team.city}`);
+                const marker = L.circleMarker([team.lat, team.lng], {
+                    radius: 6,
+                    fillColor: '#22c55e',
+                    color: '#fff',
+                    weight: 2,
+                    opacity: 1,
+                    fillOpacity: 1
+                }).bindTooltip(`<b>${team.name}</b><br>${team.city}`, {
+                    permanent: false,
+                    direction: 'top',
+                    className: 'team-tooltip'
+                });
                 teamMarkers.push(marker);
                 if (teamsLayerVisible) marker.addTo(map);
             });
@@ -684,41 +656,17 @@
             return `${minutes}m`;
         }
         
-        // Detect overnight stops
-        function detectOvernightStops(locations) {
-            const stops = [];
-            for (let i = 1; i < locations.length; i++) {
-                const prev = locations[i - 1];
-                const curr = locations[i];
-                if (prev.timestamp && curr.timestamp) {
-                    const gapHours = (curr.timestamp - prev.timestamp) / 3600;
-                    if (gapHours >= 4) {
-                        stops.push({
-                            lat: prev.latitude,
-                            lng: prev.longitude,
-                            duration: gapHours,
-                            timestamp: prev.timestamp
-                        });
-                    }
-                }
-            }
-            return stops;
-        }
-        
         // Calculate state splits
         function calculateStateSplits(locations) {
             const splits = {};
             let currentState = null;
-            let stateEntryTime = null;
-            let stateEntryIndex = 0;
             
             splits['FL'] = {
                 name: 'Florida', abbrev: 'FL',
                 entryTime: DEPARTURE_TIME.getTime() / 1000,
-                exitTime: null, distance: 0, current: false
+                exitTime: null, current: false
             };
             currentState = 'FL';
-            stateEntryTime = DEPARTURE_TIME.getTime() / 1000;
             
             for (let i = 0; i < locations.length; i++) {
                 const loc = locations[i];
@@ -729,16 +677,6 @@
                 if (state && state !== currentState) {
                     if (currentState && splits[currentState]) {
                         splits[currentState].exitTime = loc.timestamp;
-                        let dist = 0;
-                        for (let j = stateEntryIndex + 1; j <= i; j++) {
-                            if (j < locations.length) {
-                                dist += haversineDistance(
-                                    locations[j-1].latitude, locations[j-1].longitude,
-                                    locations[j].latitude, locations[j].longitude
-                                );
-                            }
-                        }
-                        splits[currentState].distance = dist;
                     }
                     
                     if (!splits[state]) {
@@ -746,12 +684,10 @@
                             name: stateFullNames[state] || state,
                             abbrev: state,
                             entryTime: loc.timestamp,
-                            exitTime: null, distance: 0, current: false
+                            exitTime: null, current: false
                         };
                     }
                     currentState = state;
-                    stateEntryTime = loc.timestamp;
-                    stateEntryIndex = i;
                 }
             }
             
@@ -792,19 +728,13 @@
                 tr.innerHTML = `
                     <td class="state-name">${state.name} ${state.current ? '📍' : ''}</td>
                     <td class="state-time">${timeStr}</td>
-                    <td class="state-distance">${state.distance > 0 ? Math.round(state.distance) + ' mi' : '--'}</td>
                     <td>${entryStr}</td>
                 `;
                 tbody.appendChild(tr);
             });
         }
         
-        function updateJourneyStats(locations, stops) {
-            document.getElementById('stat-stops').textContent = stops.length;
-            document.getElementById('stat-stops-detail').textContent = stops.length > 0 
-                ? `${stops.reduce((a, s) => a + s.duration, 0).toFixed(1)} hours total` 
-                : 'No extended stops yet';
-            
+        function updateJourneyStats(locations) {
             document.getElementById('stat-pings').textContent = locations.length;
             document.getElementById('stat-pings-detail').textContent = 'GPS location updates';
             
@@ -842,11 +772,6 @@
             }
             document.getElementById('stat-maxspeed').textContent = maxSpeed > 0 ? `${Math.round(maxSpeed)} mph` : '--';
             document.getElementById('stat-maxspeed-detail').textContent = maxSpeedLoc ? `Near ${maxSpeedLoc}` : '';
-            
-            document.getElementById('stat-longest').textContent = '--';
-            document.getElementById('stat-longest-detail').textContent = 'Coming soon';
-            document.getElementById('stat-fastest').textContent = '--';
-            document.getElementById('stat-fastest-detail').textContent = 'Coming soon';
         }
         
         async function updateTracker() {
@@ -901,24 +826,8 @@
                     })
                 }).addTo(map).bindPopup(`<b>LYRIQ</b><br>Current Location`);
                 
-                const stops = detectOvernightStops(locations);
-                overnightMarkers.forEach(m => map.removeLayer(m));
-                overnightMarkers = [];
-                stops.forEach(stop => {
-                    const marker = L.marker([stop.lat, stop.lng], {
-                        icon: L.divIcon({
-                            className: 'overnight-marker',
-                            html: '🌙',
-                            iconSize: [20, 20],
-                            iconAnchor: [10, 10]
-                        })
-                    }).bindPopup(`<b>Overnight Stop</b><br>${stop.duration.toFixed(1)} hours`);
-                    overnightMarkers.push(marker);
-                    if (stopsLayerVisible) marker.addTo(map);
-                });
-                
                 updateSplitsTable(calculateStateSplits(locations));
-                updateJourneyStats(locations, stops);
+                updateJourneyStats(locations);
                 
                 if (route) {
                     const bounds = L.latLngBounds(route.geometry);
