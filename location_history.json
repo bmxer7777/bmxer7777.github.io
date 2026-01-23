@@ -1805,6 +1805,58 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-23T11:49:41.038738"
+    },
+    {
+      "latitude": 29.77805940000001,
+      "longitude": -95.8152787,
+      "accuracy": 370.44166147465353,
+      "timestamp": 1769185535.0,
+      "address": {
+        "subAdministrativeArea": "Fort Bend County",
+        "label": "Katy Fwy",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "Katy Fwy",
+        "formattedAddressLines": [
+          "Katy Fwy",
+          "Katy, TX  77494",
+          "United States"
+        ],
+        "mapItemFullAddress": "Katy Fwy, Katy, TX  77494",
+        "fullThroroughfare": "Katy Fwy",
+        "areaOfInterest": [],
+        "locality": "Katy",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T12:00:02.067288"
+    },
+    {
+      "latitude": 29.71976849999999,
+      "longitude": -96.4369957,
+      "accuracy": 161.48459926166686,
+      "timestamp": 1769187723.0,
+      "address": {
+        "subAdministrativeArea": "Colorado County",
+        "label": "S IH 10 Rd",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "S IH 10 Rd",
+        "formattedAddressLines": [
+          "S IH 10 Rd",
+          "Alleyton, TX  78935",
+          "United States"
+        ],
+        "mapItemFullAddress": "S IH 10 Rd, Alleyton, TX  78935",
+        "fullThroroughfare": "S IH 10 Rd",
+        "areaOfInterest": [],
+        "locality": "Alleyton",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T12:06:01.329593"
     }
   ]
 }
