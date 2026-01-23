@@ -1961,6 +1961,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-23T14:10:20.413645"
+    },
+    {
+      "latitude": 29.620269600000004,
+      "longitude": -97.7873935,
+      "accuracy": 30.04225796906281,
+      "timestamp": 1769196701.0,
+      "address": {
+        "subAdministrativeArea": "Guadalupe County",
+        "label": "IH-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 W",
+        "formattedAddressLines": [
+          "IH-10 W",
+          "Kingsbury, TX  78638",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 W, Kingsbury, TX  78638",
+        "fullThroroughfare": "IH-10 W",
+        "areaOfInterest": [],
+        "locality": "Kingsbury",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T14:41:22.061203"
     }
   ]
 }
