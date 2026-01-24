@@ -3572,6 +3572,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-24T13:25:00.416770"
+    },
+    {
+      "latitude": 31.08376786477849,
+      "longitude": -104.08223166527168,
+      "accuracy": 16.00601251168313,
+      "timestamp": 1769275926.0,
+      "address": {
+        "subAdministrativeArea": "Jeff Davis County",
+        "label": "W I-10 Frontage Rd",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "W I-10 Frontage Rd",
+        "formattedAddressLines": [
+          "W I-10 Frontage Rd",
+          "Fort Davis, TX  79734",
+          "United States"
+        ],
+        "mapItemFullAddress": "W I-10 Frontage Rd, Fort Davis, TX  79734",
+        "fullThroroughfare": "W I-10 Frontage Rd",
+        "areaOfInterest": [],
+        "locality": "Fort Davis",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-24T13:54:19.738857"
     }
   ]
 }
