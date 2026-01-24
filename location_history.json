@@ -3702,6 +3702,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-24T16:26:47.533244"
+    },
+    {
+      "latitude": 31.68639245469142,
+      "longitude": -106.26970494174556,
+      "accuracy": 13.436055318259507,
+      "timestamp": 1769291104.0,
+      "address": {
+        "subAdministrativeArea": "El Paso County",
+        "label": "10334\u201310358 Desert Oak Ct",
+        "streetAddress": "10334\u201310358",
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "Desert Oak Ct",
+        "formattedAddressLines": [
+          "10334\u201310358 Desert Oak Ct",
+          "El Paso, TX  79928",
+          "United States"
+        ],
+        "mapItemFullAddress": "10334\u201310358 Desert Oak Ct, El Paso, TX  79928",
+        "fullThroroughfare": "10334\u201310358 Desert Oak Ct",
+        "areaOfInterest": [],
+        "locality": "El Paso",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-24T16:57:17.226640"
     }
   ]
 }
