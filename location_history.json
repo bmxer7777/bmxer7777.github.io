@@ -3546,6 +3546,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-24T12:53:20.451382"
+    },
+    {
+      "latitude": 31.083665799999995,
+      "longitude": -104.0820932,
+      "accuracy": 15.869743253026256,
+      "timestamp": 1769275926.0,
+      "address": {
+        "subAdministrativeArea": "Jeff Davis County",
+        "label": "IH-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 W",
+        "formattedAddressLines": [
+          "IH-10 W",
+          "Fort Davis, TX  79734",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 W, Fort Davis, TX  79734",
+        "fullThroroughfare": "IH-10 W",
+        "areaOfInterest": [],
+        "locality": "Fort Davis",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-24T13:25:00.416770"
     }
   ]
 }
