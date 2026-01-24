@@ -3624,6 +3624,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-24T14:56:28.383768"
+    },
+    {
+      "latitude": 31.686423919725733,
+      "longitude": -106.26739503227206,
+      "accuracy": 123.23503617108818,
+      "timestamp": 1769286239.0,
+      "address": {
+        "subAdministrativeArea": "El Paso County",
+        "label": "IH-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 W",
+        "formattedAddressLines": [
+          "IH-10 W",
+          "El Paso, TX  79928",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 W, El Paso, TX  79928",
+        "fullThroroughfare": "IH-10 W",
+        "areaOfInterest": [],
+        "locality": "El Paso",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-24T15:25:48.055585"
     }
   ]
 }
