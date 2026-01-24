@@ -2299,6 +2299,31 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-23T19:13:41.812003"
+    },
+    {
+      "latitude": 30.570935038412,
+      "longitude": -100.58672540065002,
+      "accuracy": 45.39168408601349,
+      "timestamp": 1769214195.0,
+      "address": {
+        "subAdministrativeArea": "Sutton County",
+        "label": "76950",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Sonora, TX  76950",
+          "United States"
+        ],
+        "mapItemFullAddress": "Sonora, TX  76950",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Sonora",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-23T19:28:56.915171"
     }
   ]
 }
