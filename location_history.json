@@ -3468,6 +3468,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-24T09:50:24.517896"
+    },
+    {
+      "latitude": 30.7173699,
+      "longitude": -101.8085371,
+      "accuracy": 30.779387975253,
+      "timestamp": 1769267566.0,
+      "address": {
+        "subAdministrativeArea": "Crockett County",
+        "label": "IH-10 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 E",
+        "formattedAddressLines": [
+          "IH-10 E",
+          "Ozona, TX  76943",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 E, Ozona, TX  76943",
+        "fullThroroughfare": "IH-10 E",
+        "areaOfInterest": [],
+        "locality": "Ozona",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-24T10:51:23.003378"
     }
   ]
 }
