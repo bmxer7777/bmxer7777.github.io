@@ -3494,6 +3494,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-24T10:51:23.003378"
+    },
+    {
+      "latitude": 31.005771500000016,
+      "longitude": -103.7270541,
+      "accuracy": 12.379394758486601,
+      "timestamp": 1769274038.0,
+      "address": {
+        "subAdministrativeArea": "Reeves County",
+        "label": "IH-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 W",
+        "formattedAddressLines": [
+          "IH-10 W",
+          "Balmorhea, TX  79718",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 W, Balmorhea, TX  79718",
+        "fullThroroughfare": "IH-10 W",
+        "areaOfInterest": [],
+        "locality": "Balmorhea",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-24T12:22:50.599369"
     }
   ]
 }
