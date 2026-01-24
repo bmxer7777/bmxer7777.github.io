@@ -3780,6 +3780,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-24T17:58:16.315194"
+    },
+    {
+      "latitude": 32.176637499999984,
+      "longitude": -106.6716384,
+      "accuracy": 161.48459926166686,
+      "timestamp": 1769296221.0,
+      "address": {
+        "subAdministrativeArea": "Do\u00f1a Ana County",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "NM",
+        "administrativeArea": "New Mexico",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Las Cruces, NM  88011",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Las Cruces, NM  88011",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Las Cruces",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-24T18:28:45.829737"
     }
   ]
 }
