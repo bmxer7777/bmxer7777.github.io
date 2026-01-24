@@ -2948,6 +2948,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-24T01:26:02.782069"
+    },
+    {
+      "latitude": 30.570654469831062,
+      "longitude": -100.58707250188363,
+      "accuracy": 33.065080803514455,
+      "timestamp": 1769235510.0,
+      "address": {
+        "subAdministrativeArea": "Sutton County",
+        "label": "3890 SH-467 Loop",
+        "streetAddress": "3890",
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "SH-467 Loop",
+        "formattedAddressLines": [
+          "3890 SH-467 Loop",
+          "Sonora, TX  76950",
+          "United States"
+        ],
+        "mapItemFullAddress": "3890 SH-467 Loop, Sonora, TX  76950",
+        "fullThroroughfare": "3890 SH-467 Loop",
+        "areaOfInterest": [],
+        "locality": "Sonora",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-24T01:41:18.051066"
     }
   ]
 }
