@@ -3728,6 +3728,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-24T16:57:17.226640"
+    },
+    {
+      "latitude": 31.68585180702795,
+      "longitude": -106.26744745119663,
+      "accuracy": 18.25671735587566,
+      "timestamp": 1769292934.0,
+      "address": {
+        "subAdministrativeArea": "El Paso County",
+        "label": "Gateway Blvd E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "Gateway Blvd E",
+        "formattedAddressLines": [
+          "Gateway Blvd E",
+          "El Paso, TX  79928",
+          "United States"
+        ],
+        "mapItemFullAddress": "Gateway Blvd E, El Paso, TX  79928",
+        "fullThroroughfare": "Gateway Blvd E",
+        "areaOfInterest": [],
+        "locality": "El Paso",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-24T17:27:46.818372"
     }
   ]
 }
