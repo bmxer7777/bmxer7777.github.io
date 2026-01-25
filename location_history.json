@@ -3832,6 +3832,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-24T18:59:15.397454"
+    },
+    {
+      "latitude": 32.28387369999999,
+      "longitude": -107.6677169,
+      "accuracy": 32.33597733834672,
+      "timestamp": 1769299835.0,
+      "address": {
+        "subAdministrativeArea": "Luna County",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "NM",
+        "administrativeArea": "New Mexico",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Deming, NM  88030",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Deming, NM  88030",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Deming",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-24T19:29:45.198364"
     }
   ]
 }
