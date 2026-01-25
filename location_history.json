@@ -3884,6 +3884,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-24T20:00:14.792933"
+    },
+    {
+      "latitude": 32.33577499999999,
+      "longitude": -108.6637731,
+      "accuracy": 11.986259464394749,
+      "timestamp": 1769303203.0,
+      "address": {
+        "subAdministrativeArea": "Hidalgo County",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "NM",
+        "administrativeArea": "New Mexico",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Lordsburg, NM  88045",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Lordsburg, NM  88045",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Lordsburg",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-24T20:30:44.548648"
     }
   ]
 }
