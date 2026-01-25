@@ -4508,6 +4508,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-25T08:42:44.282285"
+    },
+    {
+      "latitude": 32.1064007,
+      "longitude": -110.8452298,
+      "accuracy": 156.1108200279158,
+      "timestamp": 1769350835.0,
+      "address": {
+        "subAdministrativeArea": "Pima County",
+        "label": "E Benson Hwy",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "AZ",
+        "administrativeArea": "Arizona",
+        "streetName": "E Benson Hwy",
+        "formattedAddressLines": [
+          "E Benson Hwy",
+          "Tucson, AZ  85756",
+          "United States"
+        ],
+        "mapItemFullAddress": "E Benson Hwy, Tucson, AZ  85756",
+        "fullThroroughfare": "E Benson Hwy",
+        "areaOfInterest": [],
+        "locality": "Tucson",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-25T09:43:42.867394"
     }
   ]
 }
