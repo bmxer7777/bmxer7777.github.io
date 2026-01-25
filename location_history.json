@@ -3910,6 +3910,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-24T20:30:44.548648"
+    },
+    {
+      "latitude": 32.271457599999984,
+      "longitude": -109.2437043,
+      "accuracy": 143.272359513481,
+      "timestamp": 1769306135.0,
+      "address": {
+        "subAdministrativeArea": "Cochise County",
+        "label": "W Interstate Bus 10",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "AZ",
+        "administrativeArea": "Arizona",
+        "streetName": "W Interstate Bus 10",
+        "formattedAddressLines": [
+          "W Interstate Bus 10",
+          "San Simon, AZ  85632",
+          "United States"
+        ],
+        "mapItemFullAddress": "W Interstate Bus 10, San Simon, AZ  85632",
+        "fullThroroughfare": "W Interstate Bus 10",
+        "areaOfInterest": [],
+        "locality": "San Simon",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-24T21:01:14.500794"
     }
   ]
 }
