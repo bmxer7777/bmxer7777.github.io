@@ -4534,6 +4534,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-25T09:43:42.867394"
+    },
+    {
+      "latitude": 32.1566162,
+      "longitude": -110.9074605,
+      "accuracy": 12.557635839314974,
+      "timestamp": 1769352723.0,
+      "address": {
+        "subAdministrativeArea": "Pima County",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "AZ",
+        "administrativeArea": "Arizona",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Tucson, AZ  85714",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Tucson, AZ  85714",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Tucson",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-25T10:14:13.186651"
     }
   ]
 }
