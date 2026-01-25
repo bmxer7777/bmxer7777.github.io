@@ -4586,6 +4586,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-25T10:44:43.352862"
+    },
+    {
+      "latitude": 32.7470013,
+      "longitude": -111.5692445,
+      "accuracy": 136.45556939232299,
+      "timestamp": 1769355986.0,
+      "address": {
+        "subAdministrativeArea": "Pinal County",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "AZ",
+        "administrativeArea": "Arizona",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Eloy, AZ  85131",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Eloy, AZ  85131",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Eloy",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-25T11:15:13.505529"
     }
   ]
 }
