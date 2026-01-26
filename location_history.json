@@ -5730,6 +5730,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-26T15:11:21.619691"
+    },
+    {
+      "latitude": 33.7989679,
+      "longitude": -116.3766404,
+      "accuracy": 161.48459926166686,
+      "timestamp": 1769459278.0,
+      "address": {
+        "subAdministrativeArea": "Riverside County",
+        "label": "I-10 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "CA",
+        "administrativeArea": "California",
+        "streetName": "I-10 E",
+        "formattedAddressLines": [
+          "I-10 E",
+          "Palm Desert, CA  92211",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 E, Palm Desert, CA  92211",
+        "fullThroroughfare": "I-10 E",
+        "areaOfInterest": [],
+        "locality": "Palm Desert",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-26T15:41:51.396017"
     }
   ]
 }
