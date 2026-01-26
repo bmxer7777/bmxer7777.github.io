@@ -5522,6 +5522,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-26T10:36:54.806430"
+    },
+    {
+      "latitude": 33.43105962350925,
+      "longitude": -112.59228513039061,
+      "accuracy": 17.608156814447373,
+      "timestamp": 1769442968.0,
+      "address": {
+        "subAdministrativeArea": "Maricopa County",
+        "label": "1610 S Miller Rd",
+        "streetAddress": "1610",
+        "countryCode": "US",
+        "stateCode": "AZ",
+        "administrativeArea": "Arizona",
+        "streetName": "S Miller Rd",
+        "formattedAddressLines": [
+          "1610 S Miller Rd",
+          "Buckeye, AZ  85326",
+          "United States"
+        ],
+        "mapItemFullAddress": "1610 S Miller Rd, Buckeye, AZ  85326",
+        "fullThroroughfare": "1610 S Miller Rd",
+        "areaOfInterest": [],
+        "locality": "Buckeye",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-26T11:07:24.652500"
     }
   ]
 }
