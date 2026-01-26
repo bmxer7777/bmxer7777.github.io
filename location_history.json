@@ -5600,6 +5600,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-26T12:38:53.022118"
+    },
+    {
+      "latitude": 33.6655863,
+      "longitude": -114.2115877,
+      "accuracy": 90.37752479492264,
+      "timestamp": 1769450270.0,
+      "address": {
+        "subAdministrativeArea": "La Paz County",
+        "label": "315 E Ironwood St",
+        "streetAddress": "315",
+        "countryCode": "US",
+        "stateCode": "AZ",
+        "administrativeArea": "Arizona",
+        "streetName": "E Ironwood St",
+        "formattedAddressLines": [
+          "315 E Ironwood St",
+          "Quartzsite, AZ  85346",
+          "United States"
+        ],
+        "mapItemFullAddress": "315 E Ironwood St, Quartzsite, AZ  85346",
+        "fullThroroughfare": "315 E Ironwood St",
+        "areaOfInterest": [],
+        "locality": "Quartzsite",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-26T13:09:22.624129"
     }
   ]
 }
