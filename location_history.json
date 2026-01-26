@@ -5574,6 +5574,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-26T11:37:54.589872"
+    },
+    {
+      "latitude": 33.546995700000004,
+      "longitude": -113.2064881,
+      "accuracy": 11.986259464394749,
+      "timestamp": 1769447268.0,
+      "address": {
+        "subAdministrativeArea": "Maricopa County",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "AZ",
+        "administrativeArea": "Arizona",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Tonopah, AZ  85354",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Tonopah, AZ  85354",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Tonopah",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-26T12:38:53.022118"
     }
   ]
 }
