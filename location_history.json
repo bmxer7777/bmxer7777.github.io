@@ -5496,6 +5496,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-26T10:06:24.914821"
+    },
+    {
+      "latitude": 33.4579121,
+      "longitude": -112.3165403,
+      "accuracy": 11.986259464394749,
+      "timestamp": 1769441382.0,
+      "address": {
+        "subAdministrativeArea": "Maricopa County",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "AZ",
+        "administrativeArea": "Arizona",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Avondale, AZ  85392",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Avondale, AZ  85392",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Avondale",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-26T10:36:54.806430"
     }
   ]
 }
