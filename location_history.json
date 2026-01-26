@@ -5678,6 +5678,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-26T14:10:21.975535"
+    },
+    {
+      "latitude": 33.66694039999999,
+      "longitude": -115.67407959999998,
+      "accuracy": 333.4272963587868,
+      "timestamp": 1769456009.0,
+      "address": {
+        "subAdministrativeArea": "Riverside County",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "CA",
+        "administrativeArea": "California",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Indio, CA  92201",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Indio, CA  92201",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Indio",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-26T14:40:51.597493"
     }
   ]
 }
