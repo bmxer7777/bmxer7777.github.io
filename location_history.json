@@ -5626,6 +5626,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-26T13:09:22.624129"
+    },
+    {
+      "latitude": 33.60831380000001,
+      "longitude": -114.5579876,
+      "accuracy": 109.82774321383464,
+      "timestamp": 1769452008.0,
+      "address": {
+        "subAdministrativeArea": "Riverside County",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "CA",
+        "administrativeArea": "California",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Blythe, CA  92225",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Blythe, CA  92225",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Blythe",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-26T13:39:52.158736"
     }
   ]
 }
