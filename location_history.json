@@ -5704,6 +5704,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-26T14:40:51.597493"
+    },
+    {
+      "latitude": 33.709896,
+      "longitude": -116.15077370000002,
+      "accuracy": 310.88771899353173,
+      "timestamp": 1769457630.0,
+      "address": {
+        "subAdministrativeArea": "Riverside County",
+        "label": "I-10 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "CA",
+        "administrativeArea": "California",
+        "streetName": "I-10 E",
+        "formattedAddressLines": [
+          "I-10 E",
+          "Thermal, CA  92274",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 E, Thermal, CA  92274",
+        "fullThroroughfare": "I-10 E",
+        "areaOfInterest": [],
+        "locality": "Coachella",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-26T15:11:21.619691"
     }
   ]
 }
