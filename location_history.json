@@ -6797,6 +6797,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-27T11:31:18.597901"
+    },
+    {
+      "latitude": 33.9479566,
+      "longitude": -117.30065070000002,
+      "accuracy": 27.984084529349467,
+      "timestamp": 1769532935.0,
+      "address": {
+        "subAdministrativeArea": "Riverside County",
+        "label": "CA-60 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "CA",
+        "administrativeArea": "California",
+        "streetName": "CA-60 W",
+        "formattedAddressLines": [
+          "CA-60 W",
+          "Riverside, CA  92507",
+          "United States"
+        ],
+        "mapItemFullAddress": "CA-60 W, Riverside, CA  92507",
+        "fullThroroughfare": "CA-60 W",
+        "areaOfInterest": [],
+        "locality": "Riverside",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-27T12:01:48.395171"
     }
   ]
 }
