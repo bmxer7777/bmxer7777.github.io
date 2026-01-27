@@ -6823,6 +6823,35 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-27T12:01:48.395171"
+    },
+    {
+      "latitude": 33.96826521492887,
+      "longitude": -117.33062337341019,
+      "accuracy": 12.377862987887216,
+      "timestamp": 1769533320.0,
+      "address": {
+        "subAdministrativeArea": "Riverside County",
+        "label": "University of California, Riverside",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "CA",
+        "administrativeArea": "California",
+        "streetName": "Martin Luther King Blvd",
+        "formattedAddressLines": [
+          "University of California, Riverside",
+          "Martin Luther King Blvd",
+          "Riverside, CA  92507",
+          "United States"
+        ],
+        "mapItemFullAddress": "University of California, Riverside, Martin Luther King Blvd, Riverside, CA  92507",
+        "fullThroroughfare": "Martin Luther King Blvd",
+        "areaOfInterest": [
+          "University of California, Riverside"
+        ],
+        "locality": "Riverside",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-27T12:32:18.451454"
     }
   ]
 }
