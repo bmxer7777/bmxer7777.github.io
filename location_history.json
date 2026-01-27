@@ -6249,6 +6249,35 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-27T00:20:23.270302"
+    },
+    {
+      "latitude": 33.92010785167631,
+      "longitude": -116.79523726992221,
+      "accuracy": 107.55373909854991,
+      "timestamp": 1769492765.0,
+      "address": {
+        "subAdministrativeArea": "Riverside County",
+        "label": "Morongo Casino Resort & Spa",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "CA",
+        "administrativeArea": "California",
+        "streetName": "Seminole Dr",
+        "formattedAddressLines": [
+          "Morongo Casino Resort & Spa",
+          "Seminole Dr",
+          "Cabazon, CA  92230",
+          "United States"
+        ],
+        "mapItemFullAddress": "Morongo Casino Resort & Spa, Seminole Dr, Cabazon, CA  92230",
+        "fullThroroughfare": "Seminole Dr",
+        "areaOfInterest": [
+          "Morongo Casino Resort & Spa"
+        ],
+        "locality": "Cabazon",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-27T00:50:53.889399"
     }
   ]
 }
