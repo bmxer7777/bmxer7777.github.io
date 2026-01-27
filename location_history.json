@@ -6771,6 +6771,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-27T11:00:48.429840"
+    },
+    {
+      "latitude": 33.9243871,
+      "longitude": -116.880424,
+      "accuracy": 12.651702591922223,
+      "timestamp": 1769530819.0,
+      "address": {
+        "subAdministrativeArea": "Riverside County",
+        "label": "I-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "CA",
+        "administrativeArea": "California",
+        "streetName": "I-10 W",
+        "formattedAddressLines": [
+          "I-10 W",
+          "Banning, CA  92220",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 W, Banning, CA  92220",
+        "fullThroroughfare": "I-10 W",
+        "areaOfInterest": [],
+        "locality": "Banning",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-27T11:31:18.597901"
     }
   ]
 }
