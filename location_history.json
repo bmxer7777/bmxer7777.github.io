@@ -7281,6 +7281,35 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-27T20:08:34.692361"
+    },
+    {
+      "latitude": 33.97243112700265,
+      "longitude": -117.3425393006806,
+      "accuracy": 29.051905913253595,
+      "timestamp": 1769562797.0,
+      "address": {
+        "subAdministrativeArea": "Riverside County",
+        "label": "University of California, Riverside",
+        "streetAddress": "4001",
+        "countryCode": "US",
+        "stateCode": "CA",
+        "administrativeArea": "California",
+        "streetName": "Iowa Ave",
+        "formattedAddressLines": [
+          "University of California, Riverside",
+          "4001 Iowa Ave",
+          "Riverside, CA  92507",
+          "United States"
+        ],
+        "mapItemFullAddress": "University of California, Riverside, 4001 Iowa Ave, Riverside, CA  92507",
+        "fullThroroughfare": "4001 Iowa Ave",
+        "areaOfInterest": [
+          "University of California, Riverside"
+        ],
+        "locality": "Riverside",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-27T20:39:04.242756"
     }
   ]
 }
