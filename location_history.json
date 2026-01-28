@@ -7854,6 +7854,34 @@
         "country": "United States"
       },
       "recorded_at": "2026-01-28T15:28:25.810597"
+    },
+    {
+      "latitude": 33.972607199999985,
+      "longitude": -117.3439048,
+      "accuracy": 27.984084529349467,
+      "timestamp": 1769632980.0,
+      "address": {
+        "subAdministrativeArea": "Riverside County",
+        "label": "University of California, Riverside",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "CA",
+        "administrativeArea": "California",
+        "streetName": null,
+        "formattedAddressLines": [
+          "University of California, Riverside",
+          "Riverside, CA  92507",
+          "United States"
+        ],
+        "mapItemFullAddress": "University of California, Riverside, Riverside, CA  92507",
+        "fullThroroughfare": null,
+        "areaOfInterest": [
+          "University of California, Riverside"
+        ],
+        "locality": "Riverside",
+        "country": "United States"
+      },
+      "recorded_at": "2026-01-28T15:58:55.513254"
     }
   ]
 }
