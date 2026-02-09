@@ -360,13 +360,13 @@
             <img src="logo.png" alt="EcoCAR Logo" class="logo">
             <div class="title-group">
                 <h1><span>LYRIQ</span> Tracker</h1>
-                <p>EcoCAR EV Challenge - ERAU / BCU</p>
+                <p>EcoCAR EV Challenge - ERAU / BCU — Return Trip</p>
             </div>
         </div>
         
         <div class="header-center">
             <div class="eta-display">
-                <span class="label">ETA to CARB: </span>
+                <span class="label">ETA to ERAU: </span>
                 <span class="value" id="eta">Calculating...</span>
             </div>
             <div class="progress-container">
@@ -488,12 +488,12 @@
         const DATA_URL = 'location_history.json';
         const REFRESH_INTERVAL = 30000;
         
-        // Destination (CARB Riverside)
-        const DESTINATION = { lat: 33.9425, lng: -117.4297, name: "CARB, Riverside, CA" };
-        // Origin (ERAU)
-        const ORIGIN = { lat: 29.1857, lng: -81.0480, name: "ERAU, Daytona Beach, FL" };
-        // Departure time
-        const DEPARTURE_TIME = new Date('2026-01-21T16:30:00-05:00');
+        // Destination (ERAU - Return trip)
+        const DESTINATION = { lat: 29.1857, lng: -81.0480, name: "ERAU, Daytona Beach, FL" };
+        // Origin (CARB - 4001 Iowa Ave, Riverside, CA)
+        const ORIGIN = { lat: 33.9725, lng: -117.3425, name: "CARB, Riverside, CA" };
+        // Departure time (return trip - estimate)
+        const DEPARTURE_TIME = new Date('2026-02-08T08:00:00-08:00');
         // Total route distance (approximate)
         const TOTAL_ROUTE_MILES = 2400;
         
@@ -582,6 +582,16 @@
                 })
             }).addTo(map).bindPopup(`<b>Destination</b><br>${DESTINATION.name}`);
             
+            // Add origin marker (CARB - start of return trip)
+            L.marker([ORIGIN.lat, ORIGIN.lng], {
+                icon: L.divIcon({
+                    className: 'origin-marker',
+                    html: '🏁',
+                    iconSize: [25, 25],
+                    iconAnchor: [12, 12]
+                })
+            }).addTo(map).bindPopup(`<b>Origin</b><br>${ORIGIN.name}`);
+            
             // Add team markers
             ECOCAR_TEAMS.forEach(team => {
                 const marker = L.circleMarker([team.lat, team.lng], {
@@ -661,12 +671,12 @@
             const splits = {};
             let currentState = null;
             
-            splits['FL'] = {
-                name: 'Florida', abbrev: 'FL',
+            splits['CA'] = {
+                name: 'California', abbrev: 'CA',
                 entryTime: DEPARTURE_TIME.getTime() / 1000,
                 exitTime: null, current: false
             };
-            currentState = 'FL';
+            currentState = 'CA';
             
             for (let i = 0; i < locations.length; i++) {
                 const loc = locations[i];
@@ -699,7 +709,7 @@
             const tbody = document.getElementById('splits-body');
             tbody.innerHTML = '';
             
-            const stateOrder = ['FL', 'AL', 'MS', 'LA', 'TX', 'NM', 'AZ', 'CA'];
+            const stateOrder = ['CA', 'AZ', 'NM', 'TX', 'LA', 'MS', 'AL', 'FL'];
             const sortedStates = Object.values(splits).sort((a, b) => {
                 const aIdx = stateOrder.indexOf(a.abbrev);
                 const bIdx = stateOrder.indexOf(b.abbrev);
@@ -896,7 +906,7 @@
                     }
                 });
                 
-                if (!statesVisited.includes('FL')) statesVisited.unshift('FL');
+                if (!statesVisited.includes('CA')) statesVisited.unshift('CA');
                 
                 const crossedStates = statesVisited.filter(s => s !== currentState);
                 document.getElementById('states').textContent = crossedStates.length;
