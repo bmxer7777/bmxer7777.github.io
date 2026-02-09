@@ -572,11 +572,11 @@
                 maxZoom: 19
             }).addTo(map);
             
-            // Add destination marker
+            // Add destination marker (ERAU - home)
             destinationMarker = L.marker([DESTINATION.lat, DESTINATION.lng], {
                 icon: L.divIcon({
                     className: 'dest-marker',
-                    html: '🎯',
+                    html: '🏠',
                     iconSize: [25, 25],
                     iconAnchor: [12, 12]
                 })
@@ -586,11 +586,11 @@
             L.marker([ORIGIN.lat, ORIGIN.lng], {
                 icon: L.divIcon({
                     className: 'origin-marker',
-                    html: '🏁',
+                    html: '📍',
                     iconSize: [25, 25],
                     iconAnchor: [12, 12]
                 })
-            }).addTo(map).bindPopup(`<b>Origin</b><br>${ORIGIN.name}`);
+            }).addTo(map).bindPopup(`<b>Started Here</b><br>${ORIGIN.name}`);
             
             // Add team markers
             ECOCAR_TEAMS.forEach(team => {
