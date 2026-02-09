@@ -596,6 +596,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-09T18:34:45.911640"
+    },
+    {
+      "latitude": 32.4770746,
+      "longitude": -100.0147421,
+      "accuracy": 156.1108200279158,
+      "timestamp": 1770679742.0,
+      "address": {
+        "subAdministrativeArea": "Taylor County",
+        "label": "Marion St",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "Marion St",
+        "formattedAddressLines": [
+          "Marion St",
+          "Merkel, TX  79536",
+          "United States"
+        ],
+        "mapItemFullAddress": "Marion St, Merkel, TX  79536",
+        "fullThroroughfare": "Marion St",
+        "areaOfInterest": [],
+        "locality": "Merkel",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T18:50:01.191368"
     }
   ]
 }
