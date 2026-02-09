@@ -206,6 +206,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-09T13:43:46.622627"
+    },
+    {
+      "latitude": 31.8994579,
+      "longitude": -102.2391357,
+      "accuracy": 108.205369063878,
+      "timestamp": 1770663214.0,
+      "address": {
+        "subAdministrativeArea": "Midland County",
+        "label": "IH-20 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-20 W",
+        "formattedAddressLines": [
+          "IH-20 W",
+          "Odessa, TX  79765",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-20 W, Odessa, TX  79765",
+        "fullThroroughfare": "IH-20 W",
+        "areaOfInterest": [],
+        "locality": "Odessa",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T14:15:26.791972"
     }
   ]
 }
