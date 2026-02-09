@@ -76,6 +76,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-09T11:20:35.052569"
+    },
+    {
+      "latitude": 31.050166600000004,
+      "longitude": -104.9344927,
+      "accuracy": 22.532199312005645,
+      "timestamp": 1770654230.0,
+      "address": {
+        "subAdministrativeArea": "Hudspeth County",
+        "label": "IH-10 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 E",
+        "formattedAddressLines": [
+          "IH-10 E",
+          "Salt Flat, TX  79847",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 E, Salt Flat, TX  79847",
+        "fullThroroughfare": "IH-10 E",
+        "areaOfInterest": [],
+        "locality": "Salt Flat",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T11:25:17.692789"
     }
   ]
 }
