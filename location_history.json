@@ -440,6 +440,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-09T16:17:30.827663"
+    },
+    {
+      "latitude": 32.0540662,
+      "longitude": -101.9614479,
+      "accuracy": 14.090327324539455,
+      "timestamp": 1770671927.0,
+      "address": {
+        "subAdministrativeArea": "Midland County",
+        "label": "IH-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-20 E",
+        "formattedAddressLines": [
+          "IH-20 E",
+          "Midland, TX  79706",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-20 E, Midland, TX  79706",
+        "fullThroroughfare": "IH-20 E",
+        "areaOfInterest": [],
+        "locality": "Midland",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T16:32:46.088636"
     }
   ]
 }
