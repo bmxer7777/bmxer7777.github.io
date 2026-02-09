@@ -466,6 +466,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-09T16:32:46.088636"
+    },
+    {
+      "latitude": 32.137327467601175,
+      "longitude": -101.80415348971029,
+      "accuracy": 14.748709328991199,
+      "timestamp": 1770673302.0,
+      "address": {
+        "subAdministrativeArea": "Martin County",
+        "label": "1300 SH-137",
+        "streetAddress": "1300",
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "SH-137",
+        "formattedAddressLines": [
+          "1300 SH-137",
+          "Stanton, TX  79782",
+          "United States"
+        ],
+        "mapItemFullAddress": "1300 SH-137, Stanton, TX  79782",
+        "fullThroroughfare": "1300 SH-137",
+        "areaOfInterest": [],
+        "locality": "Stanton",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T16:48:01.540047"
     }
   ]
 }
