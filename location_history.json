@@ -8851,6 +8851,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-09T10:27:22.543748"
+    },
+    {
+      "latitude": 31.261624900000015,
+      "longitude": -105.792554,
+      "accuracy": 13.063862208977785,
+      "timestamp": 1770651101.0,
+      "address": {
+        "subAdministrativeArea": "Hudspeth County",
+        "label": "IH-10 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 W",
+        "formattedAddressLines": [
+          "IH-10 W",
+          "El Paso, TX  79938",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 W, El Paso, TX  79938",
+        "fullThroroughfare": "IH-10 W",
+        "areaOfInterest": [],
+        "locality": "El Paso",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T10:48:31.128869"
     }
   ]
 }
