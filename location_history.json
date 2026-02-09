@@ -180,6 +180,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-09T13:28:30.663901"
+    },
+    {
+      "latitude": 31.696662499999995,
+      "longitude": -102.6681651,
+      "accuracy": 25.564813397967704,
+      "timestamp": 1770661588.0,
+      "address": {
+        "subAdministrativeArea": "Ector County",
+        "label": "IH-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-20 E",
+        "formattedAddressLines": [
+          "IH-20 E",
+          "Notrees, TX  79759",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-20 E, Notrees, TX  79759",
+        "fullThroroughfare": "IH-20 E",
+        "areaOfInterest": [],
+        "locality": "Notrees",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T13:43:46.622627"
     }
   ]
 }
