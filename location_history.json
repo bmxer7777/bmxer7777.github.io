@@ -154,6 +154,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-09T12:27:28.993948"
+    },
+    {
+      "latitude": 31.538057900000016,
+      "longitude": -103.0719063,
+      "accuracy": 26.137268408481148,
+      "timestamp": 1770660249.0,
+      "address": {
+        "subAdministrativeArea": "Ward County",
+        "label": "IH-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-20 E",
+        "formattedAddressLines": [
+          "IH-20 E",
+          "Monahans, TX  79756",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-20 E, Monahans, TX  79756",
+        "fullThroroughfare": "IH-20 E",
+        "areaOfInterest": [],
+        "locality": "Monahans",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T13:28:30.663901"
     }
   ]
 }
