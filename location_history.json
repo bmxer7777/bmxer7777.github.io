@@ -570,6 +570,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-09T18:19:30.506188"
+    },
+    {
+      "latitude": 32.48590339999998,
+      "longitude": -100.2052498,
+      "accuracy": 12.294987880134796,
+      "timestamp": 1770679148.0,
+      "address": {
+        "subAdministrativeArea": "Nolan County",
+        "label": "IH-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-20 E",
+        "formattedAddressLines": [
+          "IH-20 E",
+          "Trent, TX  79561",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-20 E, Trent, TX  79561",
+        "fullThroroughfare": "IH-20 E",
+        "areaOfInterest": [],
+        "locality": "Trent",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T18:34:45.911640"
     }
   ]
 }
