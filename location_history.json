@@ -310,6 +310,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-09T15:01:13.709654"
+    },
+    {
+      "latitude": 31.90792784250533,
+      "longitude": -102.21537234294938,
+      "accuracy": 15.735367821568929,
+      "timestamp": 1770667607.0,
+      "address": {
+        "subAdministrativeArea": "Midland County",
+        "label": "4408 S FM 1788",
+        "streetAddress": "4408",
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "S FM 1788",
+        "formattedAddressLines": [
+          "4408 S FM 1788",
+          "Midland, TX  79706",
+          "United States"
+        ],
+        "mapItemFullAddress": "4408 S FM 1788, Midland, TX  79706",
+        "fullThroroughfare": "4408 S FM 1788",
+        "areaOfInterest": [],
+        "locality": "Midland",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T15:16:29.259397"
     }
   ]
 }
