@@ -518,6 +518,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-09T17:03:16.774191"
+    },
+    {
+      "latitude": 32.2661618,
+      "longitude": -101.4658467,
+      "accuracy": 172.83235003103758,
+      "timestamp": 1770675079.0,
+      "address": {
+        "subAdministrativeArea": "Howard County",
+        "label": "IH-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-20 E",
+        "formattedAddressLines": [
+          "IH-20 E",
+          "Big Spring, TX  79720",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-20 E, Big Spring, TX  79720",
+        "fullThroroughfare": "IH-20 E",
+        "areaOfInterest": [],
+        "locality": "Big Spring",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T17:18:32.159704"
     }
   ]
 }
