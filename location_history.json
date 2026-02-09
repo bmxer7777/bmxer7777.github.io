@@ -544,6 +544,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-09T17:18:32.159704"
+    },
+    {
+      "latitude": 32.4327701,
+      "longitude": -100.5456955,
+      "accuracy": 261.17357153092826,
+      "timestamp": 1770678048.0,
+      "address": {
+        "subAdministrativeArea": "Nolan County",
+        "label": "I-20 Frontage Rd",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "I-20 Frontage Rd",
+        "formattedAddressLines": [
+          "I-20 Frontage Rd",
+          "Roscoe, TX  79545",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-20 Frontage Rd, Roscoe, TX  79545",
+        "fullThroroughfare": "I-20 Frontage Rd",
+        "areaOfInterest": [],
+        "locality": "Roscoe",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T18:19:30.506188"
     }
   ]
 }
