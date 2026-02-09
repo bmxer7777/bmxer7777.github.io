@@ -1,1 +1,31 @@
-{"airtag_name": "ERAUBCU LYRIQ", "locations": []}
+{
+  "airtag_name": "ERAUBCU LYRIQ",
+  "locations": [
+    {
+      "latitude": 31.1968748,
+      "longitude": -105.4474748,
+      "accuracy": 20.46156775977144,
+      "timestamp": 1770652368.0,
+      "address": {
+        "subAdministrativeArea": "Hudspeth County",
+        "label": "IH-10 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-10 E",
+        "formattedAddressLines": [
+          "IH-10 E",
+          "El Paso, TX  79938",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-10 E, El Paso, TX  79938",
+        "fullThroroughfare": "IH-10 E",
+        "areaOfInterest": [],
+        "locality": "El Paso",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T10:58:15.536813"
+    }
+  ]
+}
