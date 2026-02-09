@@ -26,6 +26,31 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-09T10:58:15.536813"
+    },
+    {
+      "latitude": 31.1914365,
+      "longitude": -105.4300304,
+      "accuracy": 14.89991542946247,
+      "timestamp": 1770652661.0,
+      "address": {
+        "subAdministrativeArea": "Hudspeth County",
+        "label": "79938",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": null,
+        "formattedAddressLines": [
+          "El Paso, TX  79938",
+          "United States"
+        ],
+        "mapItemFullAddress": "El Paso, TX  79938",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "El Paso",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T11:04:08.028800"
     }
   ]
 }
