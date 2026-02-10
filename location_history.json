@@ -1532,6 +1532,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T10:03:52.596179"
+    },
+    {
+      "latitude": 32.72792829999999,
+      "longitude": -97.8201946,
+      "accuracy": 16.541501086548415,
+      "timestamp": 1770737580.0,
+      "address": {
+        "subAdministrativeArea": "Parker County",
+        "label": "1023\u20131103 W Interstate 20",
+        "streetAddress": "1023\u20131103",
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "W Interstate 20",
+        "formattedAddressLines": [
+          "1023\u20131103 W Interstate 20",
+          "Weatherford, TX  76087",
+          "United States"
+        ],
+        "mapItemFullAddress": "1023\u20131103 W Interstate 20, Weatherford, TX  76087",
+        "fullThroroughfare": "1023\u20131103 W Interstate 20",
+        "areaOfInterest": [],
+        "locality": "Weatherford",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T10:34:23.224431"
     }
   ]
 }
