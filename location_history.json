@@ -726,6 +726,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-09T20:21:31.142461"
+    },
+    {
+      "latitude": 32.516162200000004,
+      "longitude": -98.3680647,
+      "accuracy": 27.346115386262472,
+      "timestamp": 1770687009.0,
+      "address": {
+        "subAdministrativeArea": "Palo Pinto County",
+        "label": "12005 S Main St",
+        "streetAddress": "12005",
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "S Main St",
+        "formattedAddressLines": [
+          "12005 S Main St",
+          "Mingus, TX  76453",
+          "United States"
+        ],
+        "mapItemFullAddress": "12005 S Main St, Mingus, TX  76453",
+        "fullThroroughfare": "12005 S Main St",
+        "areaOfInterest": [],
+        "locality": "Gordon",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T20:52:00.650234"
     }
   ]
 }
