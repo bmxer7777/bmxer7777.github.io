@@ -1896,6 +1896,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T18:11:53.195029"
+    },
+    {
+      "latitude": 32.594122199999994,
+      "longitude": -90.0691778,
+      "accuracy": 23.96643632991276,
+      "timestamp": 1770766066.0,
+      "address": {
+        "subAdministrativeArea": "Madison County",
+        "label": "I-55 N",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "MS",
+        "administrativeArea": "Mississippi",
+        "streetName": "I-55 N",
+        "formattedAddressLines": [
+          "I-55 N",
+          "Canton, MS  39046",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-55 N, Canton, MS  39046",
+        "fullThroroughfare": "I-55 N",
+        "areaOfInterest": [],
+        "locality": "Canton",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T18:42:22.738268"
     }
   ]
 }
