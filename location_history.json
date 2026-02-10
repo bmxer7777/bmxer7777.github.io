@@ -1558,6 +1558,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T10:34:23.224431"
+    },
+    {
+      "latitude": 32.692580199999995,
+      "longitude": -97.4997882,
+      "accuracy": 27.984084529349467,
+      "timestamp": 1770739031.0,
+      "address": {
+        "subAdministrativeArea": "Tarrant County",
+        "label": "IH-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-20 E",
+        "formattedAddressLines": [
+          "IH-20 E",
+          "Fort Worth, TX  76126",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-20 E, Fort Worth, TX  76126",
+        "fullThroroughfare": "IH-20 E",
+        "areaOfInterest": [],
+        "locality": "Fort Worth",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T11:04:52.900496"
     }
   ]
 }
