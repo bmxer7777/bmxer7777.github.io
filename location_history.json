@@ -1376,6 +1376,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T08:01:51.522429"
+    },
+    {
+      "latitude": 32.51583284564837,
+      "longitude": -98.36835420450412,
+      "accuracy": 16.38636159149275,
+      "timestamp": 1770727582.0,
+      "address": {
+        "subAdministrativeArea": "Palo Pinto County",
+        "label": "108 IH-20 W",
+        "streetAddress": "108",
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-20 W",
+        "formattedAddressLines": [
+          "108 IH-20 W",
+          "Mingus, TX  76463",
+          "United States"
+        ],
+        "mapItemFullAddress": "108 IH-20 W, Mingus, TX  76463",
+        "fullThroroughfare": "108 IH-20 W",
+        "areaOfInterest": [],
+        "locality": "Mingus",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T08:32:21.268950"
     }
   ]
 }
