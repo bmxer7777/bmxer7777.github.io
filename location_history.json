@@ -1506,6 +1506,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T09:33:22.609033"
+    },
+    {
+      "latitude": 32.6360198,
+      "longitude": -98.0669475,
+      "accuracy": 17.83624379240433,
+      "timestamp": 1770735718.0,
+      "address": {
+        "subAdministrativeArea": "Palo Pinto County",
+        "label": "IH-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-20 E",
+        "formattedAddressLines": [
+          "IH-20 E",
+          "Santo, TX  76472",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-20 E, Santo, TX  76472",
+        "fullThroroughfare": "IH-20 E",
+        "areaOfInterest": [],
+        "locality": "Santo",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T10:03:52.596179"
     }
   ]
 }
