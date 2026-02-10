@@ -1012,6 +1012,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T01:57:02.599172"
+    },
+    {
+      "latitude": 32.515821638774455,
+      "longitude": -98.36834216020473,
+      "accuracy": 16.47794146738794,
+      "timestamp": 1770707787.0,
+      "address": {
+        "subAdministrativeArea": "Palo Pinto County",
+        "label": "11855\u201311931 S Main St",
+        "streetAddress": "11855\u201311931",
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "S Main St",
+        "formattedAddressLines": [
+          "11855\u201311931 S Main St",
+          "Mingus, TX  76463",
+          "United States"
+        ],
+        "mapItemFullAddress": "11855\u201311931 S Main St, Mingus, TX  76463",
+        "fullThroroughfare": "11855\u201311931 S Main St",
+        "areaOfInterest": [],
+        "locality": "Mingus",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T02:27:32.138337"
     }
   ]
 }
