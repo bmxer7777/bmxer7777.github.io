@@ -1792,6 +1792,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T15:08:56.891313"
+    },
+    {
+      "latitude": 32.4709524,
+      "longitude": -91.8276334,
+      "accuracy": 38.76124553248656,
+      "timestamp": 1770757150.0,
+      "address": {
+        "subAdministrativeArea": "Richland Parish",
+        "label": "I-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "I-20 E",
+        "formattedAddressLines": [
+          "I-20 E",
+          "Rayville, LA  71269",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-20 E, Rayville, LA  71269",
+        "fullThroroughfare": "I-20 E",
+        "areaOfInterest": [],
+        "locality": "Rayville",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T16:40:24.170124"
     }
   ]
 }
