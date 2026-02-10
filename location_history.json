@@ -1766,6 +1766,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T14:38:27.180096"
+    },
+    {
+      "latitude": 32.5611779,
+      "longitude": -93.0296248,
+      "accuracy": 13.293376924722034,
+      "timestamp": 1770753457.0,
+      "address": {
+        "subAdministrativeArea": "Bienville Parish",
+        "label": "I-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "I-20 E",
+        "formattedAddressLines": [
+          "I-20 E",
+          "Gibsland, LA  71028",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-20 E, Gibsland, LA  71028",
+        "fullThroroughfare": "I-20 E",
+        "areaOfInterest": [],
+        "locality": "Gibsland",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T15:08:56.891313"
     }
   ]
 }
