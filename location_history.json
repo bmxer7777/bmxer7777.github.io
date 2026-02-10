@@ -1584,6 +1584,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T11:04:52.900496"
+    },
+    {
+      "latitude": 32.6700097,
+      "longitude": -96.9403251,
+      "accuracy": 26.137268408481148,
+      "timestamp": 1770740813.0,
+      "address": {
+        "subAdministrativeArea": "Dallas County",
+        "label": "Lyndon B Johnson Fwy",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "Lyndon B Johnson Fwy",
+        "formattedAddressLines": [
+          "Lyndon B Johnson Fwy",
+          "Dallas, TX  75236",
+          "United States"
+        ],
+        "mapItemFullAddress": "Lyndon B Johnson Fwy, Dallas, TX  75236",
+        "fullThroroughfare": "Lyndon B Johnson Fwy",
+        "areaOfInterest": [],
+        "locality": "Dallas",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T11:35:25.803929"
     }
   ]
 }
