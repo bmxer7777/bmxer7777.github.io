@@ -1818,6 +1818,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T16:40:24.170124"
+    },
+    {
+      "latitude": 32.4363941,
+      "longitude": -91.4526645,
+      "accuracy": 34.892199493152575,
+      "timestamp": 1770758280.0,
+      "address": {
+        "subAdministrativeArea": "Madison Parish",
+        "label": "I-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "I-20 E",
+        "formattedAddressLines": [
+          "I-20 E",
+          "Delhi, LA  71232",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-20 E, Delhi, LA  71232",
+        "fullThroroughfare": "I-20 E",
+        "areaOfInterest": [],
+        "locality": "Delhi",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T17:10:53.793290"
     }
   ]
 }
