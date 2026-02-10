@@ -1714,6 +1714,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T13:37:27.799204"
+    },
+    {
+      "latitude": 32.4524021,
+      "longitude": -94.0227028,
+      "accuracy": 89.07125046409405,
+      "timestamp": 1770750135.0,
+      "address": {
+        "subAdministrativeArea": "Caddo Parish",
+        "label": "I-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "I-20 E",
+        "formattedAddressLines": [
+          "I-20 E",
+          "Greenwood, LA  71033",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-20 E, Greenwood, LA  71033",
+        "fullThroroughfare": "I-20 E",
+        "areaOfInterest": [],
+        "locality": "Greenwood",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T14:07:57.458338"
     }
   ]
 }
