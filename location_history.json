@@ -1740,6 +1740,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T14:07:57.458338"
+    },
+    {
+      "latitude": 32.55770660000001,
+      "longitude": -93.6840051,
+      "accuracy": 11.986259464394749,
+      "timestamp": 1770751366.0,
+      "address": {
+        "subAdministrativeArea": "Bossier Parish",
+        "label": "I-220 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "LA",
+        "administrativeArea": "Louisiana",
+        "streetName": "I-220 E",
+        "formattedAddressLines": [
+          "I-220 E",
+          "Bossier City, LA  71111",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-220 E, Bossier City, LA  71111",
+        "fullThroroughfare": "I-220 E",
+        "areaOfInterest": [],
+        "locality": "Bossier City",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T14:38:27.180096"
     }
   ]
 }
