@@ -1610,6 +1610,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T11:35:25.803929"
+    },
+    {
+      "latitude": 32.7041502,
+      "longitude": -96.352747,
+      "accuracy": 26.137268408481148,
+      "timestamp": 1770742651.0,
+      "address": {
+        "subAdministrativeArea": "Kaufman County",
+        "label": "IH-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-20 E",
+        "formattedAddressLines": [
+          "IH-20 E",
+          "Terrell, TX  75160",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-20 E, Terrell, TX  75160",
+        "fullThroroughfare": "IH-20 E",
+        "areaOfInterest": [],
+        "locality": "Terrell",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T12:05:56.219590"
     }
   ]
 }
