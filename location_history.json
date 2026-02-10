@@ -1688,6 +1688,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T13:06:57.326683"
+    },
+    {
+      "latitude": 32.4405014,
+      "longitude": -95.0812185,
+      "accuracy": 31.543628731482656,
+      "timestamp": 1770746922.0,
+      "address": {
+        "subAdministrativeArea": "Smith County",
+        "label": "IH-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-20 E",
+        "formattedAddressLines": [
+          "IH-20 E",
+          "Winona, TX  75792",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-20 E, Winona, TX  75792",
+        "fullThroroughfare": "IH-20 E",
+        "areaOfInterest": [],
+        "locality": "Winona",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T13:37:27.799204"
     }
   ]
 }
