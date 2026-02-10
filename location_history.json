@@ -1636,6 +1636,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T12:05:56.219590"
+    },
+    {
+      "latitude": 32.506505599999976,
+      "longitude": -95.6432583,
+      "accuracy": 12.749229005912872,
+      "timestamp": 1770744908.0,
+      "address": {
+        "subAdministrativeArea": "Van Zandt County",
+        "label": "IH-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-20 E",
+        "formattedAddressLines": [
+          "IH-20 E",
+          "Van, TX  75790",
+          "United States"
+        ],
+        "mapItemFullAddress": "IH-20 E, Van, TX  75790",
+        "fullThroroughfare": "IH-20 E",
+        "areaOfInterest": [],
+        "locality": "Van",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T12:36:26.925691"
     }
   ]
 }
