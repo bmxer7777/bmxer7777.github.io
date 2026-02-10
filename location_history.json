@@ -622,6 +622,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-09T18:50:01.191368"
+    },
+    {
+      "latitude": 32.4153385,
+      "longitude": -99.5135878,
+      "accuracy": 161.48459926166686,
+      "timestamp": 1770681375.0,
+      "address": {
+        "subAdministrativeArea": "Callahan County",
+        "label": "Red Oak Farm Rd",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "Red Oak Farm Rd",
+        "formattedAddressLines": [
+          "Red Oak Farm Rd",
+          "Clyde, TX  79510",
+          "United States"
+        ],
+        "mapItemFullAddress": "Red Oak Farm Rd, Clyde, TX  79510",
+        "fullThroroughfare": "Red Oak Farm Rd",
+        "areaOfInterest": [],
+        "locality": "Clyde",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T19:05:16.432578"
     }
   ]
 }
