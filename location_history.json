@@ -1870,6 +1870,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T17:41:23.528572"
+    },
+    {
+      "latitude": 32.373003,
+      "longitude": -90.2160897,
+      "accuracy": 42.052802105824085,
+      "timestamp": 1770764895.0,
+      "address": {
+        "subAdministrativeArea": "Hinds County",
+        "label": "I-220 N",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "MS",
+        "administrativeArea": "Mississippi",
+        "streetName": "I-220 N",
+        "formattedAddressLines": [
+          "I-220 N",
+          "Jackson, MS  39213",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-220 N, Jackson, MS  39213",
+        "fullThroroughfare": "I-220 N",
+        "areaOfInterest": [],
+        "locality": "Jackson",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T18:11:53.195029"
     }
   ]
 }
