@@ -648,6 +648,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-09T19:05:16.432578"
+    },
+    {
+      "latitude": 32.4381621,
+      "longitude": -98.6990115,
+      "accuracy": 12.059311685034992,
+      "timestamp": 1770683913.0,
+      "address": {
+        "subAdministrativeArea": "Eastland County",
+        "label": "7201\u20137265 IH-20 E",
+        "streetAddress": "7201\u20137265",
+        "countryCode": "US",
+        "stateCode": "TX",
+        "administrativeArea": "Texas",
+        "streetName": "IH-20 E",
+        "formattedAddressLines": [
+          "7201\u20137265 IH-20 E",
+          "Ranger, TX  76448",
+          "United States"
+        ],
+        "mapItemFullAddress": "7201\u20137265 IH-20 E, Ranger, TX  76448",
+        "fullThroroughfare": "7201\u20137265 IH-20 E",
+        "areaOfInterest": [],
+        "locality": "Ranger",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-09T19:51:00.729488"
     }
   ]
 }
