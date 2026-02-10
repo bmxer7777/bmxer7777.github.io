@@ -1844,6 +1844,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T17:10:53.793290"
+    },
+    {
+      "latitude": 32.3633011,
+      "longitude": -90.6819294,
+      "accuracy": 18.423258855042008,
+      "timestamp": 1770761005.0,
+      "address": {
+        "subAdministrativeArea": "Warren County",
+        "label": "I-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "MS",
+        "administrativeArea": "Mississippi",
+        "streetName": "I-20 E",
+        "formattedAddressLines": [
+          "I-20 E",
+          "Vicksburg, MS  39183",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-20 E, Vicksburg, MS  39183",
+        "fullThroroughfare": "I-20 E",
+        "areaOfInterest": [],
+        "locality": "Vicksburg",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T17:41:23.528572"
     }
   ]
 }
