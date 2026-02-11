@@ -2558,6 +2558,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T11:58:07.975504"
+    },
+    {
+      "latitude": 33.3844757,
+      "longitude": -86.8065637,
+      "accuracy": 12.135050677990801,
+      "timestamp": 1770830645.0,
+      "address": {
+        "subAdministrativeArea": "Tuscaloosa County",
+        "label": "I-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "AL",
+        "administrativeArea": "Alabama",
+        "streetName": "I-20 E",
+        "formattedAddressLines": [
+          "I-20 E",
+          "Cottondale, AL  35453",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-20 E, Cottondale, AL  35453",
+        "fullThroroughfare": "I-20 E",
+        "areaOfInterest": [],
+        "locality": "Tuscaloosa",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T12:28:39.805557"
     }
   ]
 }
