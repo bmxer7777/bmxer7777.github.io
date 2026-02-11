@@ -2743,6 +2743,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T15:31:49.741163"
+    },
+    {
+      "latitude": 33.649451049216566,
+      "longitude": -84.39721942650448,
+      "accuracy": 15.9429437114805,
+      "timestamp": 1770843128.0,
+      "address": {
+        "subAdministrativeArea": "Fulton County",
+        "label": "I-75 S",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "GA",
+        "administrativeArea": "Georgia",
+        "streetName": "I-75 S",
+        "formattedAddressLines": [
+          "I-75 S",
+          "Atlanta, GA  30354",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-75 S, Atlanta, GA  30354",
+        "fullThroroughfare": "I-75 S",
+        "areaOfInterest": [],
+        "locality": "Atlanta",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T16:02:23.032663"
     }
   ]
 }
