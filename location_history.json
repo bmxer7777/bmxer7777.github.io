@@ -2474,6 +2474,35 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T10:26:37.417630"
+    },
+    {
+      "latitude": 33.2200936,
+      "longitude": -87.5457444,
+      "accuracy": 44.45388585644725,
+      "timestamp": 1770825339.0,
+      "address": {
+        "subAdministrativeArea": "Tuscaloosa County",
+        "label": "The University of Alabama",
+        "streetAddress": "622",
+        "countryCode": "US",
+        "stateCode": "AL",
+        "administrativeArea": "Alabama",
+        "streetName": "Abercrombie Ln",
+        "formattedAddressLines": [
+          "The University of Alabama",
+          "622 Abercrombie Ln",
+          "Tuscaloosa, AL  35401",
+          "United States"
+        ],
+        "mapItemFullAddress": "The University of Alabama, 622 Abercrombie Ln, Tuscaloosa, AL  35401",
+        "fullThroroughfare": "622 Abercrombie Ln",
+        "areaOfInterest": [
+          "The University of Alabama"
+        ],
+        "locality": "Tuscaloosa",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T10:58:17.844313"
     }
   ]
 }
