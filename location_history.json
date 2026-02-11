@@ -2610,6 +2610,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T12:59:14.305432"
+    },
+    {
+      "latitude": 33.5845325,
+      "longitude": -86.0378252,
+      "accuracy": 14.39673480932834,
+      "timestamp": 1770833249.0,
+      "address": {
+        "subAdministrativeArea": "Talladega County",
+        "label": "I-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "AL",
+        "administrativeArea": "Alabama",
+        "streetName": "I-20 E",
+        "formattedAddressLines": [
+          "I-20 E",
+          "Eastaboga, AL  36260",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-20 E, Eastaboga, AL  36260",
+        "fullThroroughfare": "I-20 E",
+        "areaOfInterest": [],
+        "locality": "Lincoln",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T13:29:47.656976"
     }
   ]
 }
