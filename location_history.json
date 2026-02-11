@@ -2000,6 +2000,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T20:13:51.979190"
+    },
+    {
+      "latitude": 33.46955161983597,
+      "longitude": -88.76717599005904,
+      "accuracy": 16.627456729685125,
+      "timestamp": 1770776042.0,
+      "address": {
+        "subAdministrativeArea": "Oktibbeha County",
+        "label": "1129 US-82 E",
+        "streetAddress": "1129",
+        "countryCode": "US",
+        "stateCode": "MS",
+        "administrativeArea": "Mississippi",
+        "streetName": "US-82 E",
+        "formattedAddressLines": [
+          "1129 US-82 E",
+          "Starkville, MS  39759",
+          "United States"
+        ],
+        "mapItemFullAddress": "1129 US-82 E, Starkville, MS  39759",
+        "fullThroroughfare": "1129 US-82 E",
+        "areaOfInterest": [],
+        "locality": "Starkville",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T21:45:19.179945"
     }
   ]
 }
