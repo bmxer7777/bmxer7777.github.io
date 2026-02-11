@@ -2769,6 +2769,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T16:02:23.032663"
+    },
+    {
+      "latitude": 33.48059119999999,
+      "longitude": -84.2158786,
+      "accuracy": 300.213999130926,
+      "timestamp": 1770845173.0,
+      "address": {
+        "subAdministrativeArea": "Henry County",
+        "label": "I-75 N",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "GA",
+        "administrativeArea": "Georgia",
+        "streetName": "I-75 N",
+        "formattedAddressLines": [
+          "I-75 N",
+          "McDonough, GA  30253",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-75 N, McDonough, GA  30253",
+        "fullThroroughfare": "I-75 N",
+        "areaOfInterest": [],
+        "locality": "McDonough",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T16:32:52.961897"
     }
   ]
 }
