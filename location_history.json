@@ -2688,6 +2688,35 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T14:30:49.985639"
+    },
+    {
+      "latitude": 33.786837433731975,
+      "longitude": -84.405024777119,
+      "accuracy": 25.392462908919963,
+      "timestamp": 1770839867.0,
+      "address": {
+        "subAdministrativeArea": "Fulton County",
+        "label": "Georgia Institute of Technology",
+        "streetAddress": "555",
+        "countryCode": "US",
+        "stateCode": "GA",
+        "administrativeArea": "Georgia",
+        "streetName": "14th St NW",
+        "formattedAddressLines": [
+          "Georgia Institute of Technology",
+          "555 14th St NW",
+          "Atlanta, GA  30318",
+          "United States"
+        ],
+        "mapItemFullAddress": "Georgia Institute of Technology, 555 14th St NW, Atlanta, GA  30318",
+        "fullThroroughfare": "555 14th St NW",
+        "areaOfInterest": [
+          "Georgia Institute of Technology"
+        ],
+        "locality": "Atlanta",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T15:01:20.028159"
     }
   ]
 }
