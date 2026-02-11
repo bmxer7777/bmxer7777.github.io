@@ -2872,6 +2872,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T18:03:11.761639"
+    },
+    {
+      "latitude": 32.2624147,
+      "longitude": -83.7503437,
+      "accuracy": 23.470989625198246,
+      "timestamp": 1770852214.0,
+      "address": {
+        "subAdministrativeArea": "Dooly County",
+        "label": "State Route 401",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "GA",
+        "administrativeArea": "Georgia",
+        "streetName": "State Route 401",
+        "formattedAddressLines": [
+          "State Route 401",
+          "Unadilla, GA  31091",
+          "United States"
+        ],
+        "mapItemFullAddress": "State Route 401, Unadilla, GA  31091",
+        "fullThroroughfare": "State Route 401",
+        "areaOfInterest": [],
+        "locality": "Unadilla",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T18:33:41.443181"
     }
   ]
 }
