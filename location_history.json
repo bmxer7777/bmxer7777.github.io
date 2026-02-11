@@ -2503,6 +2503,35 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T10:58:17.844313"
+    },
+    {
+      "latitude": 33.217420567056685,
+      "longitude": -87.54251261216679,
+      "accuracy": 18.646362511863718,
+      "timestamp": 1770827183.0,
+      "address": {
+        "subAdministrativeArea": "Tuscaloosa County",
+        "label": "The University of Alabama",
+        "streetAddress": "200",
+        "countryCode": "US",
+        "stateCode": "AL",
+        "administrativeArea": "Alabama",
+        "streetName": "Hackberry Ln",
+        "formattedAddressLines": [
+          "The University of Alabama",
+          "200 Hackberry Ln",
+          "Tuscaloosa, AL  35401",
+          "United States"
+        ],
+        "mapItemFullAddress": "The University of Alabama, 200 Hackberry Ln, Tuscaloosa, AL  35401",
+        "fullThroroughfare": "200 Hackberry Ln",
+        "areaOfInterest": [
+          "The University of Alabama"
+        ],
+        "locality": "Tuscaloosa",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T11:28:48.264005"
     }
   ]
 }
