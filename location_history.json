@@ -2286,6 +2286,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T06:23:48.105249"
+    },
+    {
+      "latitude": 33.47088320000002,
+      "longitude": -88.766331,
+      "accuracy": 63.1461074045377,
+      "timestamp": 1770811890.0,
+      "address": {
+        "subAdministrativeArea": "Oktibbeha County",
+        "label": "1126 MS-182 W",
+        "streetAddress": "1126",
+        "countryCode": "US",
+        "stateCode": "MS",
+        "administrativeArea": "Mississippi",
+        "streetName": "MS-182 W",
+        "formattedAddressLines": [
+          "1126 MS-182 W",
+          "Starkville, MS  39759",
+          "United States"
+        ],
+        "mapItemFullAddress": "1126 MS-182 W, Starkville, MS  39759",
+        "fullThroroughfare": "1126 MS-182 W",
+        "areaOfInterest": [],
+        "locality": "Starkville",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T07:24:46.954997"
     }
   ]
 }
