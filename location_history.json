@@ -2584,6 +2584,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T12:28:39.805557"
+    },
+    {
+      "latitude": 33.5925945,
+      "longitude": -86.4196504,
+      "accuracy": 14.726095358575273,
+      "timestamp": 1770832124.0,
+      "address": {
+        "subAdministrativeArea": "St. Clair County",
+        "label": "I-20 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "AL",
+        "administrativeArea": "Alabama",
+        "streetName": "I-20 E",
+        "formattedAddressLines": [
+          "I-20 E",
+          "Odenville, AL  35128",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-20 E, Odenville, AL  35128",
+        "fullThroroughfare": "I-20 E",
+        "areaOfInterest": [],
+        "locality": "Odenville",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T12:59:14.305432"
     }
   ]
 }
