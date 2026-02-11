@@ -1948,6 +1948,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T19:12:52.357738"
+    },
+    {
+      "latitude": 33.0787558,
+      "longitude": -89.8978988,
+      "accuracy": 15.869743253026256,
+      "timestamp": 1770769107.0,
+      "address": {
+        "subAdministrativeArea": "Holmes County",
+        "label": "I-55 N",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "MS",
+        "administrativeArea": "Mississippi",
+        "streetName": "I-55 N",
+        "formattedAddressLines": [
+          "I-55 N",
+          "Durant, MS  39063",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-55 N, Durant, MS  39063",
+        "fullThroroughfare": "I-55 N",
+        "areaOfInterest": [],
+        "locality": "Durant",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T19:43:22.281570"
     }
   ]
 }
