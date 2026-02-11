@@ -2662,6 +2662,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T14:00:19.233378"
+    },
+    {
+      "latitude": 33.76564,
+      "longitude": -84.5090122,
+      "accuracy": 22.087630869112267,
+      "timestamp": 1770838061.0,
+      "address": {
+        "subAdministrativeArea": "Fulton County",
+        "label": "I-20 W",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "GA",
+        "administrativeArea": "Georgia",
+        "streetName": "I-20 W",
+        "formattedAddressLines": [
+          "I-20 W",
+          "Atlanta, GA  30331",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-20 W, Atlanta, GA  30331",
+        "fullThroroughfare": "I-20 W",
+        "areaOfInterest": [],
+        "locality": "Atlanta",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T14:30:49.985639"
     }
   ]
 }
