@@ -1922,6 +1922,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-10T18:42:22.738268"
+    },
+    {
+      "latitude": 32.89147780000001,
+      "longitude": -90.0206173,
+      "accuracy": 14.558441397588984,
+      "timestamp": 1770767160.0,
+      "address": {
+        "subAdministrativeArea": "Yazoo County",
+        "label": "I-55 S",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "MS",
+        "administrativeArea": "Mississippi",
+        "streetName": "I-55 S",
+        "formattedAddressLines": [
+          "I-55 S",
+          "Pickens, MS  39146",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-55 S, Pickens, MS  39146",
+        "fullThroroughfare": "I-55 S",
+        "areaOfInterest": [],
+        "locality": "Pickens",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-10T19:12:52.357738"
     }
   ]
 }
