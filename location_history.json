@@ -2422,6 +2422,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T09:26:46.872893"
+    },
+    {
+      "latitude": 33.517716799999995,
+      "longitude": -88.420613,
+      "accuracy": 32.33597733834672,
+      "timestamp": 1770821460.0,
+      "address": {
+        "subAdministrativeArea": "Lowndes County",
+        "label": "US-82 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "MS",
+        "administrativeArea": "Mississippi",
+        "streetName": "US-82 E",
+        "formattedAddressLines": [
+          "US-82 E",
+          "Columbus, MS  39701",
+          "United States"
+        ],
+        "mapItemFullAddress": "US-82 E, Columbus, MS  39701",
+        "fullThroroughfare": "US-82 E",
+        "areaOfInterest": [],
+        "locality": "Columbus",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T09:57:16.767948"
     }
   ]
 }
