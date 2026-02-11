@@ -2364,6 +2364,35 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T08:25:46.857034"
+    },
+    {
+      "latitude": 33.4705884,
+      "longitude": -88.7955024,
+      "accuracy": 15.46068213278301,
+      "timestamp": 1770817761.0,
+      "address": {
+        "subAdministrativeArea": "Oktibbeha County",
+        "label": "Mississippi State University",
+        "streetAddress": "219\u2013275",
+        "countryCode": "US",
+        "stateCode": "MS",
+        "administrativeArea": "Mississippi",
+        "streetName": "Research Blvd",
+        "formattedAddressLines": [
+          "Mississippi State University",
+          "219\u2013275 Research Blvd",
+          "Starkville, MS  39759",
+          "United States"
+        ],
+        "mapItemFullAddress": "Mississippi State University, 219\u2013275 Research Blvd, Starkville, MS  39759",
+        "fullThroroughfare": "219\u2013275 Research Blvd",
+        "areaOfInterest": [
+          "Mississippi State University"
+        ],
+        "locality": "Starkville",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T08:56:16.698227"
     }
   ]
 }
