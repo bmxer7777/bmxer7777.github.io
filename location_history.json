@@ -2795,6 +2795,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T16:32:52.961897"
+    },
+    {
+      "latitude": 33.138782799999994,
+      "longitude": -84.0219445,
+      "accuracy": 14.726095358575273,
+      "timestamp": 1770846720.0,
+      "address": {
+        "subAdministrativeArea": "Monroe County",
+        "label": "I-75 N",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "GA",
+        "administrativeArea": "Georgia",
+        "streetName": "I-75 N",
+        "formattedAddressLines": [
+          "I-75 N",
+          "Forsyth, GA  31029",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-75 N, Forsyth, GA  31029",
+        "fullThroroughfare": "I-75 N",
+        "areaOfInterest": [],
+        "locality": "Forsyth",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T17:02:12.337314"
     }
   ]
 }
