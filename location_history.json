@@ -2821,6 +2821,31 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T17:02:12.337314"
+    },
+    {
+      "latitude": 32.971540493578054,
+      "longitude": -83.82882739091198,
+      "accuracy": 17.079491223094664,
+      "timestamp": 1770847828.0,
+      "address": {
+        "subAdministrativeArea": "Monroe County",
+        "label": "31046",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "GA",
+        "administrativeArea": "Georgia",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Juliette, GA  31046",
+          "United States"
+        ],
+        "mapItemFullAddress": "Juliette, GA  31046",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Juliette",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T17:32:42.041931"
     }
   ]
 }
