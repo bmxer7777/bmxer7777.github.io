@@ -2846,6 +2846,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T17:32:42.041931"
+    },
+    {
+      "latitude": 32.716624499999995,
+      "longitude": -83.7229309,
+      "accuracy": 69.75722811507006,
+      "timestamp": 1770850025.0,
+      "address": {
+        "subAdministrativeArea": "Bibb County",
+        "label": "4886 Sardis Church Rd",
+        "streetAddress": "4886",
+        "countryCode": "US",
+        "stateCode": "GA",
+        "administrativeArea": "Georgia",
+        "streetName": "Sardis Church Rd",
+        "formattedAddressLines": [
+          "4886 Sardis Church Rd",
+          "Macon, GA  31216",
+          "United States"
+        ],
+        "mapItemFullAddress": "4886 Sardis Church Rd, Macon, GA  31216",
+        "fullThroroughfare": "4886 Sardis Church Rd",
+        "areaOfInterest": [],
+        "locality": "Macon",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T18:03:11.761639"
     }
   ]
 }
