@@ -3755,6 +3755,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-12T10:48:27.892510"
+    },
+    {
+      "latitude": 31.0426265,
+      "longitude": -83.397692,
+      "accuracy": 16.782089584304693,
+      "timestamp": 1770912325.0,
+      "address": {
+        "subAdministrativeArea": "Cook County",
+        "label": "State Route 401",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "GA",
+        "administrativeArea": "Georgia",
+        "streetName": "State Route 401",
+        "formattedAddressLines": [
+          "State Route 401",
+          "Hahira, GA  31632",
+          "United States"
+        ],
+        "mapItemFullAddress": "State Route 401, Hahira, GA  31632",
+        "fullThroroughfare": "State Route 401",
+        "areaOfInterest": [],
+        "locality": "Cecil",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-12T11:18:58.216699"
     }
   ]
 }
