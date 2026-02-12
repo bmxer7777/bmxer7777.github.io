@@ -3417,6 +3417,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-12T04:42:28.092041"
+    },
+    {
+      "latitude": 31.958251860661793,
+      "longitude": -83.74744172809798,
+      "accuracy": 47.60526358594666,
+      "timestamp": 1770887210.0,
+      "address": {
+        "subAdministrativeArea": "Crisp County",
+        "label": "2110 E 16th Ave",
+        "streetAddress": "2110",
+        "countryCode": "US",
+        "stateCode": "GA",
+        "administrativeArea": "Georgia",
+        "streetName": "E 16th Ave",
+        "formattedAddressLines": [
+          "2110 E 16th Ave",
+          "Cordele, GA  31015",
+          "United States"
+        ],
+        "mapItemFullAddress": "2110 E 16th Ave, Cordele, GA  31015",
+        "fullThroroughfare": "2110 E 16th Ave",
+        "areaOfInterest": [],
+        "locality": "Cordele",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-12T05:12:57.707953"
     }
   ]
 }
