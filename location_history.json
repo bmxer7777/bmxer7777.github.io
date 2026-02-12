@@ -3781,6 +3781,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-12T11:18:58.216699"
+    },
+    {
+      "latitude": 30.705320899999997,
+      "longitude": -83.2476145,
+      "accuracy": 14.726095358575273,
+      "timestamp": 1770914827.0,
+      "address": {
+        "subAdministrativeArea": "Lowndes County",
+        "label": "State Route 401",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "GA",
+        "administrativeArea": "Georgia",
+        "streetName": "State Route 401",
+        "formattedAddressLines": [
+          "State Route 401",
+          "Valdosta, GA  31601",
+          "United States"
+        ],
+        "mapItemFullAddress": "State Route 401, Valdosta, GA  31601",
+        "fullThroroughfare": "State Route 401",
+        "areaOfInterest": [],
+        "locality": "Valdosta",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-12T11:49:29.124844"
     }
   ]
 }
