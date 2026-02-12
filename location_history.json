@@ -3989,6 +3989,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-12T17:55:26.955637"
+    },
+    {
+      "latitude": 30.259109114643685,
+      "longitude": -82.13421214280787,
+      "accuracy": 258.0670434768923,
+      "timestamp": 1770938188.0,
+      "address": {
+        "subAdministrativeArea": "Baker County",
+        "label": "I-10 E",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "FL",
+        "administrativeArea": "Florida",
+        "streetName": "I-10 E",
+        "formattedAddressLines": [
+          "I-10 E",
+          "Macclenny, FL  32063",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-10 E, Macclenny, FL  32063",
+        "fullThroroughfare": "I-10 E",
+        "areaOfInterest": [],
+        "locality": "Macclenny",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-12T18:25:56.630866"
     }
   ]
 }
