@@ -2898,6 +2898,31 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T18:33:41.443181"
+    },
+    {
+      "latitude": 31.958037453128963,
+      "longitude": -83.74726958821098,
+      "accuracy": 129.99821307074683,
+      "timestamp": 1770854449.0,
+      "address": {
+        "subAdministrativeArea": "Crisp County",
+        "label": "31015",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "GA",
+        "administrativeArea": "Georgia",
+        "streetName": null,
+        "formattedAddressLines": [
+          "Cordele, GA  31015",
+          "United States"
+        ],
+        "mapItemFullAddress": "Cordele, GA  31015",
+        "fullThroroughfare": null,
+        "areaOfInterest": [],
+        "locality": "Cordele",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T19:04:11.072101"
     }
   ]
 }
