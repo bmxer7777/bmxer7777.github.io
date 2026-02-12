@@ -3703,6 +3703,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-12T09:47:27.141294"
+    },
+    {
+      "latitude": 31.906599175935334,
+      "longitude": -83.74084258459771,
+      "accuracy": 32.13500923786057,
+      "timestamp": 1770908645.0,
+      "address": {
+        "subAdministrativeArea": "Crisp County",
+        "label": "373 Rockhouse Rd E",
+        "streetAddress": "373",
+        "countryCode": "US",
+        "stateCode": "GA",
+        "administrativeArea": "Georgia",
+        "streetName": "Rockhouse Rd E",
+        "formattedAddressLines": [
+          "373 Rockhouse Rd E",
+          "Cordele, GA  31015",
+          "United States"
+        ],
+        "mapItemFullAddress": "373 Rockhouse Rd E, Cordele, GA  31015",
+        "fullThroroughfare": "373 Rockhouse Rd E",
+        "areaOfInterest": [],
+        "locality": "Cordele",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-12T10:17:57.271017"
     }
   ]
 }
