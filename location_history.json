@@ -3027,6 +3027,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-11T21:06:10.331033"
+    },
+    {
+      "latitude": 31.958433824948706,
+      "longitude": -83.74600284624037,
+      "accuracy": 20.427505594766565,
+      "timestamp": 1770863282.0,
+      "address": {
+        "subAdministrativeArea": "Crisp County",
+        "label": "SR-90",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "GA",
+        "administrativeArea": "Georgia",
+        "streetName": "SR-90",
+        "formattedAddressLines": [
+          "SR-90",
+          "Cordele, GA  31015",
+          "United States"
+        ],
+        "mapItemFullAddress": "SR-90, Cordele, GA  31015",
+        "fullThroroughfare": "SR-90",
+        "areaOfInterest": [],
+        "locality": "Cordele",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-11T21:36:39.985035"
     }
   ]
 }
