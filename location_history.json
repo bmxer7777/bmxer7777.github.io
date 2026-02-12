@@ -3911,6 +3911,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-12T16:23:57.876765"
+    },
+    {
+      "latitude": 30.643750556521773,
+      "longitude": -83.1911972441609,
+      "accuracy": 16.83112282846063,
+      "timestamp": 1770933096.0,
+      "address": {
+        "subAdministrativeArea": "Lowndes County",
+        "label": "6972 Lake Park Bellville Rd",
+        "streetAddress": "6972",
+        "countryCode": "US",
+        "stateCode": "GA",
+        "administrativeArea": "Georgia",
+        "streetName": "Lake Park Bellville Rd",
+        "formattedAddressLines": [
+          "6972 Lake Park Bellville Rd",
+          "Lake Park, GA  31636",
+          "United States"
+        ],
+        "mapItemFullAddress": "6972 Lake Park Bellville Rd, Lake Park, GA  31636",
+        "fullThroroughfare": "6972 Lake Park Bellville Rd",
+        "areaOfInterest": [],
+        "locality": "Lake Park",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-12T16:54:27.504793"
     }
   ]
 }
