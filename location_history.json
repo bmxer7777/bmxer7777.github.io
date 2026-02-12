@@ -3729,6 +3729,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-12T10:17:57.271017"
+    },
+    {
+      "latitude": 31.7168297,
+      "longitude": -83.639499,
+      "accuracy": 13.540084647576334,
+      "timestamp": 1770909744.0,
+      "address": {
+        "subAdministrativeArea": "Turner County",
+        "label": "State Route 401",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "GA",
+        "administrativeArea": "Georgia",
+        "streetName": "State Route 401",
+        "formattedAddressLines": [
+          "State Route 401",
+          "Ashburn, GA  31714",
+          "United States"
+        ],
+        "mapItemFullAddress": "State Route 401, Ashburn, GA  31714",
+        "fullThroroughfare": "State Route 401",
+        "areaOfInterest": [],
+        "locality": "Ashburn",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-12T10:48:27.892510"
     }
   ]
 }
