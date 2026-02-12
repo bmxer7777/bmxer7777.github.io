@@ -4015,6 +4015,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-12T18:25:56.630866"
+    },
+    {
+      "latitude": 30.1845181,
+      "longitude": -81.6366559,
+      "accuracy": 12.213575259498189,
+      "timestamp": 1770940144.0,
+      "address": {
+        "subAdministrativeArea": "Duval County",
+        "label": "I-295 S",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "FL",
+        "administrativeArea": "Florida",
+        "streetName": "I-295 S",
+        "formattedAddressLines": [
+          "I-295 S",
+          "Jacksonville, FL  32223",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-295 S, Jacksonville, FL  32223",
+        "fullThroroughfare": "I-295 S",
+        "areaOfInterest": [],
+        "locality": "Jacksonville",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-12T18:56:26.125844"
     }
   ]
 }
