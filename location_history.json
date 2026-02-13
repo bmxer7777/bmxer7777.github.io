@@ -4067,6 +4067,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-12T19:25:45.816025"
+    },
+    {
+      "latitude": 29.3377552,
+      "longitude": -81.1321966,
+      "accuracy": 98.12049327011674,
+      "timestamp": 1770943716.0,
+      "address": {
+        "subAdministrativeArea": "St. Johns County",
+        "label": "I-95 S",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "FL",
+        "administrativeArea": "Florida",
+        "streetName": "I-95 S",
+        "formattedAddressLines": [
+          "I-95 S",
+          "Saint Augustine, FL  32092",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-95 S, Saint Augustine, FL  32092",
+        "fullThroroughfare": "I-95 S",
+        "areaOfInterest": [],
+        "locality": "Saint Augustine",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-12T19:56:15.553076"
     }
   ]
 }
