@@ -4145,6 +4145,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-12T21:28:53.899274"
+    },
+    {
+      "latitude": 29.254023332140044,
+      "longitude": -81.11222411228162,
+      "accuracy": 20.963370267358002,
+      "timestamp": 1770950070.0,
+      "address": {
+        "subAdministrativeArea": "Volusia County",
+        "label": "175 Williamson Blvd",
+        "streetAddress": "175",
+        "countryCode": "US",
+        "stateCode": "FL",
+        "administrativeArea": "Florida",
+        "streetName": "Williamson Blvd",
+        "formattedAddressLines": [
+          "175 Williamson Blvd",
+          "Ormond Beach, FL  32174",
+          "United States"
+        ],
+        "mapItemFullAddress": "175 Williamson Blvd, Ormond Beach, FL  32174",
+        "fullThroroughfare": "175 Williamson Blvd",
+        "areaOfInterest": [],
+        "locality": "Ormond Beach",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-12T21:59:24.139931"
     }
   ]
 }
