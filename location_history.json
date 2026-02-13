@@ -4899,6 +4899,32 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-13T10:11:25.163193"
+    },
+    {
+      "latitude": 29.200311700000015,
+      "longitude": -81.0964081,
+      "accuracy": 11.986259464394749,
+      "timestamp": 1770995298.0,
+      "address": {
+        "subAdministrativeArea": "Volusia County",
+        "label": "I-95 S",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "FL",
+        "administrativeArea": "Florida",
+        "streetName": "I-95 S",
+        "formattedAddressLines": [
+          "I-95 S",
+          "Daytona Beach, FL  32124",
+          "United States"
+        ],
+        "mapItemFullAddress": "I-95 S, Daytona Beach, FL  32124",
+        "fullThroroughfare": "I-95 S",
+        "areaOfInterest": [],
+        "locality": "Daytona Beach",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-13T10:40:44.914275"
     }
   ]
 }
