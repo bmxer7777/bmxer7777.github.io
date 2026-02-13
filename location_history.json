@@ -4925,6 +4925,35 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-13T10:40:44.914275"
+    },
+    {
+      "latitude": 29.191969435652396,
+      "longitude": -81.0529762724412,
+      "accuracy": 14.238324847226043,
+      "timestamp": 1770996818.0,
+      "address": {
+        "subAdministrativeArea": "Volusia County",
+        "label": "Embry-Riddle Aeronautical University",
+        "streetAddress": null,
+        "countryCode": "US",
+        "stateCode": "FL",
+        "administrativeArea": "Florida",
+        "streetName": "Richard Petty Blvd",
+        "formattedAddressLines": [
+          "Embry-Riddle Aeronautical University",
+          "Richard Petty Blvd",
+          "Daytona Beach, FL  32114",
+          "United States"
+        ],
+        "mapItemFullAddress": "Embry-Riddle Aeronautical University, Richard Petty Blvd, Daytona Beach, FL  32114",
+        "fullThroroughfare": "Richard Petty Blvd",
+        "areaOfInterest": [
+          "Embry-Riddle Aeronautical University"
+        ],
+        "locality": "Daytona Beach",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-13T10:41:56.388796"
     }
   ]
 }
