@@ -5998,6 +5998,35 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-14T02:54:26.235581"
+    },
+    {
+      "latitude": 29.188596300000004,
+      "longitude": -81.0471448,
+      "accuracy": 12.213575259498189,
+      "timestamp": 1771078483.0,
+      "address": {
+        "subAdministrativeArea": "Volusia County",
+        "label": "Embry-Riddle Aeronautical University",
+        "streetAddress": "618",
+        "countryCode": "US",
+        "stateCode": "FL",
+        "administrativeArea": "Florida",
+        "streetName": "Aerospace Blvd",
+        "formattedAddressLines": [
+          "Embry-Riddle Aeronautical University",
+          "618 Aerospace Blvd",
+          "Daytona Beach, FL  32114",
+          "United States"
+        ],
+        "mapItemFullAddress": "Embry-Riddle Aeronautical University, 618 Aerospace Blvd, Daytona Beach, FL  32114",
+        "fullThroroughfare": "618 Aerospace Blvd",
+        "areaOfInterest": [
+          "Embry-Riddle Aeronautical University"
+        ],
+        "locality": "Daytona Beach",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-14T10:00:01.275154"
     }
   ]
 }
