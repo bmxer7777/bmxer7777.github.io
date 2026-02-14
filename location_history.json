@@ -6143,6 +6143,35 @@
         "country": "United States"
       },
       "recorded_at": "2026-02-14T12:02:02.439987"
+    },
+    {
+      "latitude": 29.188747041303685,
+      "longitude": -81.04726426054363,
+      "accuracy": 14.067425612256976,
+      "timestamp": 1771085799.0,
+      "address": {
+        "subAdministrativeArea": "Volusia County",
+        "label": "Embry-Riddle Aeronautical University",
+        "streetAddress": "618",
+        "countryCode": "US",
+        "stateCode": "FL",
+        "administrativeArea": "Florida",
+        "streetName": "S Clyde Morris Blvd",
+        "formattedAddressLines": [
+          "Embry-Riddle Aeronautical University",
+          "618 S Clyde Morris Blvd",
+          "Daytona Beach, FL  32114",
+          "United States"
+        ],
+        "mapItemFullAddress": "Embry-Riddle Aeronautical University, 618 S Clyde Morris Blvd, Daytona Beach, FL  32114",
+        "fullThroroughfare": "618 S Clyde Morris Blvd",
+        "areaOfInterest": [
+          "Embry-Riddle Aeronautical University"
+        ],
+        "locality": "Daytona Beach",
+        "country": "United States"
+      },
+      "recorded_at": "2026-02-14T12:32:35.783138"
     }
   ]
 }
