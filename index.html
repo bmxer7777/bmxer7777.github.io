@@ -3,226 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Hannah · Projects</title>
-    <meta name="description" content="Projects by Andrew Hannah, M.S. Mechanical Engineering '26 at Embry-Riddle.">
+    <title>andrew hannah</title>
+    <meta name="description" content="Projects by Andrew Hannah.">
     <script>
         try { const t = localStorage.getItem('site-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap">
-    <style>
-        :root {
-            --erau-blue: #02539E;
-            --erau-navy: #1C2B57;
-            --erau-gold: #FFCB06;
-            --page: #F1F6FB;
-            --surface: #FFFFFF;
-            --surface-2: #F5F8FC;
-            --border: #DDE3EC;
-            --heading: #1C2B57;
-            --text: #242424;
-            --muted: #5F6B7A;
-            --link: #005EBA;
-            --shadow: 0 1px 3px rgba(28, 43, 87, 0.12), 0 1px 2px rgba(28, 43, 87, 0.06);
-            --shadow-hover: 0 8px 24px rgba(28, 43, 87, 0.16);
-            --font-head: 'Oswald', 'Arial Narrow', Impact, sans-serif;
-            --font-body: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
-            color-scheme: light;
-        }
-        @media (prefers-color-scheme: dark) {
-            :root:not([data-theme="light"]) {
-                --page: #0E1628; --surface: #16213D; --surface-2: #1B2849; --border: #2A3B66;
-                --heading: #F1F6FB; --text: #E4EAF3; --muted: #A3B0C6; --link: #8FD3FF;
-                --shadow: 0 1px 3px rgba(0, 0, 0, 0.5); --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.5);
-                color-scheme: dark;
-            }
-        }
-        :root[data-theme="dark"] {
-            --page: #0E1628; --surface: #16213D; --surface-2: #1B2849; --border: #2A3B66;
-            --heading: #F1F6FB; --text: #E4EAF3; --muted: #A3B0C6; --link: #8FD3FF;
-            --shadow: 0 1px 3px rgba(0, 0, 0, 0.5); --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.5);
-            color-scheme: dark;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: var(--font-body); background: var(--page); color: var(--text); line-height: 1.5; }
-        a { color: var(--link); font-weight: 700; }
-        :focus-visible { outline: 2px solid var(--erau-gold); outline-offset: 2px; }
-
-        .topbar { background: var(--erau-blue); color: #fff; border-bottom: 1px solid var(--erau-navy); }
-        .topbar-inner { max-width: 1080px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-        .wordmark { font-family: var(--font-head); font-weight: 600; font-size: 1.35rem; text-transform: uppercase; letter-spacing: 0.03em; color: #fff; text-decoration: none; }
-        .top-links { display: flex; align-items: center; gap: 6px; }
-        .top-links a, .theme-btn {
-            color: #fff; font-size: 0.9rem; font-weight: 700; text-decoration: none;
-            padding: 7px 10px; border-radius: 5px; background: none; border: 0; cursor: pointer; font-family: inherit;
-            display: inline-flex; align-items: center; gap: 6px;
-        }
-        .top-links a:hover, .theme-btn:hover { background: rgba(255, 255, 255, 0.12); }
-        .theme-btn svg, .top-links svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-
-        .hero { background: var(--erau-navy); color: #fff; }
-        .hero-inner { max-width: 1080px; margin: 0 auto; padding: 44px 24px 40px; }
-        .eyebrow { font-family: var(--font-head); color: var(--erau-gold); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.9rem; }
-        .hero h1 { font-family: var(--font-head); font-weight: 500; font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.1; margin-top: 4px; text-transform: lowercase; }
-        .hero p { color: #C6EFFF; max-width: 60ch; margin-top: 10px; font-size: 1.05rem; }
-
-        main { max-width: 1080px; margin: 0 auto; padding: 32px 24px 56px; }
-        h2.section { font-family: var(--font-head); font-weight: 500; color: var(--heading); font-size: 1.6rem; margin-bottom: 16px; }
-
-        .project {
-            background: var(--surface); border: 1px solid var(--border); border-radius: 4px; box-shadow: var(--shadow);
-            display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); overflow: hidden;
-            border-top: 4px solid var(--erau-blue);
-            transition: box-shadow 0.15s ease;
-        }
-        .project + .project { margin-top: 24px; }
-        .project:hover { box-shadow: var(--shadow-hover); }
-        .thumb { display: block; background: var(--surface-2); border-right: 1px solid var(--border); min-height: 260px; overflow: hidden; }
-        .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; transition: transform 0.3s ease; }
-        .project:hover .thumb img { transform: scale(1.02); }
-        .info { padding: 22px 24px; display: flex; flex-direction: column; gap: 10px; }
-        .tags { display: flex; flex-wrap: wrap; gap: 6px; }
-        .tag { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 2px 8px; border-radius: 10px; border: 1px solid var(--border); color: var(--muted); background: var(--surface-2); }
-        .tag.live { color: #1E7B34; border-color: currentColor; background: rgba(30, 123, 52, 0.08); }
-        .tag.beta { color: #7A5A00; border-color: #E0B200; background: #FFF6D6; }
-        :root[data-theme="dark"] .tag.live { color: #4ADE80; }
-        :root[data-theme="dark"] .tag.beta { color: #FFCB06; background: rgba(255, 203, 6, 0.1); }
-        @media (prefers-color-scheme: dark) {
-            :root:not([data-theme="light"]) .tag.live { color: #4ADE80; }
-            :root:not([data-theme="light"]) .tag.beta { color: #FFCB06; background: rgba(255, 203, 6, 0.1); }
-        }
-        .info h3 { font-family: var(--font-head); font-weight: 500; color: var(--heading); font-size: 1.6rem; line-height: 1.15; }
-        .info p { color: var(--text); }
-        .info ul { padding-left: 18px; color: var(--muted); font-size: 0.92rem; }
-        .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 6px; }
-        .btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 4px; font-size: 0.9rem; font-weight: 700; text-decoration: none; border: 1px solid var(--erau-blue); color: var(--link); background: var(--surface); }
-        .btn:hover { background: var(--surface-2); }
-        .btn.primary { background: var(--erau-blue); color: #fff; }
-        .btn.primary:hover { background: #01447F; }
-
-        /* The earlier version, nested under its successor */
-        .predecessor {
-            grid-column: 1 / -1;
-            border-top: 1px dashed var(--border);
-            background: var(--surface-2);
-            display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 18px; align-items: center;
-            padding: 16px 24px;
-        }
-        .predecessor .mini { display: block; aspect-ratio: 14 / 9; border: 1px solid var(--border); border-radius: 3px; overflow: hidden; }
-        .predecessor .mini img { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; }
-        .predecessor h4 { font-family: var(--font-head); font-weight: 500; color: var(--heading); font-size: 1.15rem; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-        .predecessor p { font-size: 0.9rem; color: var(--muted); margin: 4px 0 8px; }
-        .predecessor .lineage { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
-
-        footer { border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
-        footer div { max-width: 1080px; margin: 0 auto; padding: 18px 24px 28px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-
-        @media (max-width: 760px) {
-            .topbar-inner, .hero-inner, main, footer div { padding-left: 16px; padding-right: 16px; }
-            .top-links .label { display: none; }
-            .project { grid-template-columns: 1fr; }
-            .thumb { border-right: 0; border-bottom: 1px solid var(--border); min-height: 0; aspect-ratio: 14 / 9; }
-            .info { padding: 18px 16px; }
-            .predecessor { grid-template-columns: 1fr; padding: 16px; }
-            .predecessor .mini { max-width: 280px; }
-        }
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=Instrument+Sans:wght@400..700&display=swap">
+    <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-    <header class="topbar">
-        <div class="topbar-inner">
-            <a class="wordmark" href="./">andrew hannah</a>
-            <nav class="top-links">
-                <a href="https://github.com/bmxer7777" title="GitHub profile">
-                    <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.4 6.4-1.5 6.4-6.9a5.4 5.4 0 0 0-1.5-3.7 5 5 0 0 0-.1-3.7s-1.2-.4-3.9 1.5a13.4 13.4 0 0 0-7 0C6.3 1.3 5.1 1.7 5.1 1.7a5 5 0 0 0-.1 3.7A5.4 5.4 0 0 0 3.5 9.1c0 5.4 3.3 6.5 6.4 6.9a3.4 3.4 0 0 0-.9 2.6V22"/></svg>
-                    <span class="label">GitHub</span>
-                </a>
-                <button class="theme-btn" id="theme-btn" title="Switch light / dark">
-                    <svg viewBox="0 0 24 24" id="theme-icon"></svg>
-                    <span class="label" id="theme-label">Theme</span>
-                </button>
-            </nav>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="poster">
+        <svg class="scene" id="scene" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+
+        <div class="corner corner-tl">
+            <a class="name" href="./">andrew hannah</a>
+            <span class="sub">B.S. &amp; M.S. Mechanical Engineering</span>
+        </div>
+        <div class="corner corner-tr">
+            <a class="chip" href="https://github.com/bmxer7777">github</a>
+            <a class="chip" href="https://www.linkedin.com/in/andrew-hannah-me/">linkedin</a>
+            <button class="chip" id="theme-btn" type="button">dark</button>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-inner">
-            <div class="eyebrow">Embry-Riddle Aeronautical University · M.S. Mechanical Engineering '26</div>
-            <h1>Projects</h1>
-            <p>Things I've built, mostly for the EcoCAR team at ERAU. Each one runs right here on GitHub Pages.</p>
-        </div>
-    </section>
-
     <main>
+        <h2 class="section-title"><span class="dot"></span>projects</h2>
+
         <article class="project">
             <a class="thumb" href="ecocar-vehicle-tracker/" aria-label="Open the EcoCAR Vehicle Tracker">
-                <img src="assets/thumb-tracker.jpg" alt="The EcoCAR Vehicle Tracker: a map of the route from Daytona Beach to Argonne with ETA and trip stats" loading="lazy">
+                <img src="assets/thumb-tracker.jpg" alt="EcoCAR Vehicle Tracker map with route, ETA and trip stats" loading="lazy">
             </a>
             <div class="info">
-                <div class="tags"><span class="tag live">Live</span><span class="tag">EcoCAR</span><span class="tag">2026</span></div>
+                <div class="meta"><span class="tag">ecocar</span><span class="tag">2026</span></div>
                 <h3>EcoCAR Vehicle Tracker</h3>
-                <p>A public live map of the team's Chevy Blazer EV on its way to events, powered by an AirTag and a Mac. Anyone with the link sees the route, ETA and states crossed. At an event it switches to "at the venue since…".</p>
-                <ul>
-                    <li>A settings gear to edit the event, route, stops and vehicle from any device</li>
-                    <li>Every EcoCAR Innovation Challenge school on the map, in school colors, split by GM and Stellantis track</li>
-                    <li>ERAU-styled light and dark themes, a DC fast charger layer, and a demo mode</li>
-                </ul>
+                <p>Public live map of the EcoCAR team's Chevy Blazer EV traveling to events. Location comes from an AirTag through Find My on a Mac.</p>
                 <div class="actions">
-                    <a class="btn primary" href="ecocar-vehicle-tracker/">Open tracker</a>
-                    <a class="btn" href="ecocar-vehicle-tracker/?demo">Try the demo</a>
-                    <a class="btn" href="https://github.com/bmxer7777/ecocar-vehicle-tracker">Source</a>
+                    <a class="btn primary" href="ecocar-vehicle-tracker/">open</a>
+                    <a class="btn" href="ecocar-vehicle-tracker/?demo">demo</a>
+                    <a class="btn" href="https://github.com/bmxer7777/ecocar-vehicle-tracker">source</a>
                 </div>
             </div>
 
-            <div class="predecessor">
+            <div class="stub">
                 <a class="mini" href="lyriq/" aria-label="Open the LYRIQ Tracker beta">
-                    <img src="assets/thumb-lyriq.jpg" alt="The LYRIQ Tracker beta: a dark map of the LYRIQ's route from Riverside, California to Daytona Beach" loading="lazy">
+                    <img src="assets/thumb-lyriq.jpg" alt="LYRIQ Tracker map of the drive from Riverside, CA to Daytona Beach" loading="lazy">
                 </a>
                 <div>
-                    <div class="lineage">Where it started</div>
-                    <h4>LYRIQ Tracker <span class="tag beta">Beta · Jan–Feb 2026</span></h4>
-                    <p>The first version, hard-coded for one trip: bringing ERAU's Cadillac LYRIQ home from CARB emissions testing in Riverside, CA, about 2,800 miles. It's archived now, so the map replays that drive.</p>
-                    <a href="lyriq/">View the archived beta →</a>
+                    <div class="meta"><span class="tag beta">beta · 2026</span></div>
+                    <h4>LYRIQ Tracker</h4>
+                    <p>First version, built for one trip: the Cadillac LYRIQ's drive from Riverside, CA to Daytona Beach.</p>
+                    <a class="more" href="lyriq/">view</a>
                 </div>
             </div>
         </article>
 
         <article class="project">
             <a class="thumb" href="e2eu/" aria-label="Open RecipeTree">
-                <img src="assets/thumb-e2eu.jpg" alt="RecipeTree: a grid of Minecraft item icons with search and bookmarks" loading="lazy">
+                <img src="assets/thumb-e2eu.jpg" alt="RecipeTree item grid with search and bookmarks" loading="lazy">
             </a>
             <div class="info">
-                <div class="tags"><span class="tag live">Live</span><span class="tag">Minecraft</span><span class="tag">2026</span></div>
-                <h3>RecipeTree: E2EU Crafting Calc</h3>
-                <p>A fast, in-browser recipe browser for the E2EU modpack: 32,000+ items and 87,000+ recipes. You can search, see what an item is made from and what it's used in, and bookmark the ones you need.</p>
+                <div class="meta"><span class="tag">minecraft</span><span class="tag">2026</span></div>
+                <h3>RecipeTree</h3>
+                <p>Recipe browser for the E2EU modpack. Search 32,000+ items and 87,000+ recipes by ingredient or use.</p>
                 <div class="actions">
-                    <a class="btn primary" href="e2eu/">Open RecipeTree</a>
-                    <a class="btn" href="https://github.com/bmxer7777/e2eu">Source</a>
+                    <a class="btn primary" href="e2eu/">open</a>
+                    <a class="btn" href="https://github.com/bmxer7777/e2eu">source</a>
                 </div>
             </div>
         </article>
     </main>
 
     <footer>
-        <div>
-            <span>Andrew Hannah · Embry-Riddle Aeronautical University</span>
-            <a href="https://github.com/bmxer7777">github.com/bmxer7777</a>
-        </div>
+        <span>andrew hannah</span>
+        <span class="links"><a href="https://github.com/bmxer7777">github</a> · <a href="https://www.linkedin.com/in/andrew-hannah-me/">linkedin</a></span>
     </footer>
 
+    <script src="assets/scene.js"></script>
     <script>
-        const btn = document.getElementById('theme-btn');
         const dq = window.matchMedia('(prefers-color-scheme: dark)');
         const isDark = () => (document.documentElement.dataset.theme || (dq.matches ? 'dark' : 'light')) === 'dark';
-        function paint() {
-            const dark = isDark();
-            document.getElementById('theme-label').textContent = dark ? 'Light mode' : 'Dark mode';
-            document.getElementById('theme-icon').innerHTML = dark
-                ? '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'
-                : '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
-        }
+        const btn = document.getElementById('theme-btn');
+        const paint = () => { btn.textContent = isDark() ? 'light' : 'dark'; };
         btn.addEventListener('click', () => {
             const next = isDark() ? 'light' : 'dark';
             document.documentElement.dataset.theme = next;
