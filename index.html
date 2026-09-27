@@ -3,946 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LYRIQ Tracker - EcoCAR Team</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <title>Andrew Hannah · Projects</title>
+    <meta name="description" content="Projects by Andrew Hannah, M.S. Mechanical Engineering '26 at Embry-Riddle.">
+    <script>
+        try { const t = localStorage.getItem('site-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --erau-blue: #02539E;
+            --erau-navy: #1C2B57;
+            --erau-gold: #FFCB06;
+            --page: #F1F6FB;
+            --surface: #FFFFFF;
+            --surface-2: #F5F8FC;
+            --border: #DDE3EC;
+            --heading: #1C2B57;
+            --text: #242424;
+            --muted: #5F6B7A;
+            --link: #005EBA;
+            --shadow: 0 1px 3px rgba(28, 43, 87, 0.12), 0 1px 2px rgba(28, 43, 87, 0.06);
+            --shadow-hover: 0 8px 24px rgba(28, 43, 87, 0.16);
+            --font-head: 'Oswald', 'Arial Narrow', Impact, sans-serif;
+            --font-body: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+            color-scheme: light;
         }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0a0a0a;
-            color: #fff;
-            min-height: 100vh;
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) {
+                --page: #0E1628; --surface: #16213D; --surface-2: #1B2849; --border: #2A3B66;
+                --heading: #F1F6FB; --text: #E4EAF3; --muted: #A3B0C6; --link: #8FD3FF;
+                --shadow: 0 1px 3px rgba(0, 0, 0, 0.5); --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.5);
+                color-scheme: dark;
+            }
         }
-        
-        .header {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            padding: 15px 20px;
-            border-bottom: 1px solid #333;
-            display: grid;
-            grid-template-columns: 1fr 2fr 1fr;
-            align-items: center;
-            gap: 20px;
+        :root[data-theme="dark"] {
+            --page: #0E1628; --surface: #16213D; --surface-2: #1B2849; --border: #2A3B66;
+            --heading: #F1F6FB; --text: #E4EAF3; --muted: #A3B0C6; --link: #8FD3FF;
+            --shadow: 0 1px 3px rgba(0, 0, 0, 0.5); --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.5);
+            color-scheme: dark;
         }
-        
-        .header-left {
-            display: flex;
-            align-items: center;
-            gap: 12px;
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); background: var(--page); color: var(--text); line-height: 1.5; }
+        a { color: var(--link); font-weight: 700; }
+        :focus-visible { outline: 2px solid var(--erau-gold); outline-offset: 2px; }
+
+        .topbar { background: var(--erau-blue); color: #fff; border-bottom: 1px solid var(--erau-navy); }
+        .topbar-inner { max-width: 1080px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+        .wordmark { font-family: var(--font-head); font-weight: 600; font-size: 1.35rem; text-transform: uppercase; letter-spacing: 0.03em; color: #fff; text-decoration: none; }
+        .top-links { display: flex; align-items: center; gap: 6px; }
+        .top-links a, .theme-btn {
+            color: #fff; font-size: 0.9rem; font-weight: 700; text-decoration: none;
+            padding: 7px 10px; border-radius: 5px; background: none; border: 0; cursor: pointer; font-family: inherit;
+            display: inline-flex; align-items: center; gap: 6px;
         }
-        
-        .header-left .logo {
-            height: 45px;
-            width: auto;
+        .top-links a:hover, .theme-btn:hover { background: rgba(255, 255, 255, 0.12); }
+        .theme-btn svg, .top-links svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+        .hero { background: var(--erau-navy); color: #fff; }
+        .hero-inner { max-width: 1080px; margin: 0 auto; padding: 44px 24px 40px; }
+        .eyebrow { font-family: var(--font-head); color: var(--erau-gold); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.9rem; }
+        .hero h1 { font-family: var(--font-head); font-weight: 500; font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.1; margin-top: 4px; text-transform: lowercase; }
+        .hero p { color: #C6EFFF; max-width: 60ch; margin-top: 10px; font-size: 1.05rem; }
+
+        main { max-width: 1080px; margin: 0 auto; padding: 32px 24px 56px; }
+        h2.section { font-family: var(--font-head); font-weight: 500; color: var(--heading); font-size: 1.6rem; margin-bottom: 16px; }
+
+        .project {
+            background: var(--surface); border: 1px solid var(--border); border-radius: 4px; box-shadow: var(--shadow);
+            display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); overflow: hidden;
+            border-top: 4px solid var(--erau-blue);
+            transition: box-shadow 0.15s ease;
         }
-        
-        .header-left .title-group h1 {
-            font-size: 1.5rem;
-            font-weight: 600;
+        .project + .project { margin-top: 24px; }
+        .project:hover { box-shadow: var(--shadow-hover); }
+        .thumb { display: block; background: var(--surface-2); border-right: 1px solid var(--border); min-height: 260px; overflow: hidden; }
+        .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; transition: transform 0.3s ease; }
+        .project:hover .thumb img { transform: scale(1.02); }
+        .info { padding: 22px 24px; display: flex; flex-direction: column; gap: 10px; }
+        .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+        .tag { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 2px 8px; border-radius: 10px; border: 1px solid var(--border); color: var(--muted); background: var(--surface-2); }
+        .tag.live { color: #1E7B34; border-color: currentColor; background: rgba(30, 123, 52, 0.08); }
+        .tag.beta { color: #7A5A00; border-color: #E0B200; background: #FFF6D6; }
+        :root[data-theme="dark"] .tag.live { color: #4ADE80; }
+        :root[data-theme="dark"] .tag.beta { color: #FFCB06; background: rgba(255, 203, 6, 0.1); }
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) .tag.live { color: #4ADE80; }
+            :root:not([data-theme="light"]) .tag.beta { color: #FFCB06; background: rgba(255, 203, 6, 0.1); }
         }
-        
-        .header-left .title-group h1 span {
-            color: #00d4ff;
+        .info h3 { font-family: var(--font-head); font-weight: 500; color: var(--heading); font-size: 1.6rem; line-height: 1.15; }
+        .info p { color: var(--text); }
+        .info ul { padding-left: 18px; color: var(--muted); font-size: 0.92rem; }
+        .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 6px; }
+        .btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 4px; font-size: 0.9rem; font-weight: 700; text-decoration: none; border: 1px solid var(--erau-blue); color: var(--link); background: var(--surface); }
+        .btn:hover { background: var(--surface-2); }
+        .btn.primary { background: var(--erau-blue); color: #fff; }
+        .btn.primary:hover { background: #01447F; }
+
+        /* The earlier version, nested under its successor */
+        .predecessor {
+            grid-column: 1 / -1;
+            border-top: 1px dashed var(--border);
+            background: var(--surface-2);
+            display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 18px; align-items: center;
+            padding: 16px 24px;
         }
-        
-        .header-left .title-group p {
-            color: #888;
-            font-size: 0.75rem;
-        }
-        
-        .header-center {
-            text-align: center;
-        }
-        
-        .eta-display {
-            font-size: 1.1rem;
-            margin-bottom: 8px;
-        }
-        
-        .eta-display .label {
-            color: #888;
-        }
-        
-        .eta-display .value {
-            color: #00d4ff;
-            font-weight: 600;
-        }
-        
-        .progress-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-        
-        .progress-bar {
-            width: 200px;
-            height: 8px;
-            background: #333;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-        
-        .progress-bar .fill {
-            height: 100%;
-            background: linear-gradient(90deg, #00d4ff, #00ff88);
-            border-radius: 4px;
-            transition: width 0.5s ease;
-        }
-        
-        .progress-text {
-            font-size: 0.85rem;
-            color: #888;
-        }
-        
-        .header-right {
-            display: flex;
-            justify-content: flex-end;
-            gap: 5px;
-        }
-        
-        .tab-btn {
-            padding: 8px 16px;
-            background: transparent;
-            border: 1px solid #444;
-            color: #888;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.85rem;
-            transition: all 0.2s;
-        }
-        
-        .tab-btn:hover {
-            border-color: #00d4ff;
-            color: #fff;
-        }
-        
-        .tab-btn.active {
-            background: #00d4ff;
-            border-color: #00d4ff;
-            color: #000;
-            font-weight: 600;
-        }
-        
-        .main-content {
-            position: relative;
-        }
-        
-        .tab-content {
-            display: none;
-        }
-        
-        .tab-content.active {
-            display: block;
-        }
-        
-        #map {
-            height: calc(100vh - 260px);
-            min-height: 400px;
-        }
-        
-        .data-panel {
-            height: calc(100vh - 260px);
-            min-height: 400px;
-            padding: 30px;
-            overflow-y: auto;
-            background: #0d0d0d;
-        }
-        
-        .data-panel h2 {
-            color: #00d4ff;
-            margin-bottom: 20px;
-            font-size: 1.3rem;
-        }
-        
-        .splits-table {
-            width: 100%;
-            max-width: 600px;
-            border-collapse: collapse;
-        }
-        
-        .splits-table th,
-        .splits-table td {
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 1px solid #333;
-        }
-        
-        .splits-table th {
-            color: #888;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        .splits-table td {
-            font-size: 1rem;
-        }
-        
-        .splits-table tr.current {
-            background: rgba(0, 212, 255, 0.1);
-        }
-        
-        .splits-table .state-name {
-            color: #fff;
-            font-weight: 500;
-        }
-        
-        .splits-table .state-time {
-            color: #00d4ff;
-        }
-        
-        .splits-table .state-distance {
-            color: #888;
-        }
-        
-        .journey-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            max-width: 800px;
-        }
-        
-        .journey-stat-card {
-            background: #1a1a2e;
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid #333;
-        }
-        
-        .journey-stat-card .label {
-            color: #888;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 8px;
-        }
-        
-        .journey-stat-card .value {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #00d4ff;
-        }
-        
-        .journey-stat-card .detail {
-            font-size: 0.85rem;
-            color: #666;
-            margin-top: 5px;
-        }
-        
-        .stats-bar {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 15px;
-            padding: 15px 20px;
-            background: #111;
-            border-top: 1px solid #333;
-        }
-        
-        .stat-card {
-            background: #1a1a2e;
-            padding: 12px;
-            border-radius: 10px;
-            border: 1px solid #333;
-        }
-        
-        .stat-card .label {
-            color: #888;
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 4px;
-        }
-        
-        .stat-card .value {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #00d4ff;
-            line-height: 1.3;
-        }
-        
-        .stat-card .subvalue {
-            font-size: 0.75rem;
-            color: #666;
-            margin-top: 2px;
-        }
-        
-        .status-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 8px 20px;
-            background: #0d0d0d;
-            border-top: 1px solid #222;
-            font-size: 0.8rem;
-        }
-        
-        .status-bar .status {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .status-bar .dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: #00ff88;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-        
-        .status-bar .last-update {
-            color: #666;
-        }
-        
-        /* Map controls */
-        .map-controls {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            z-index: 1000;
-            background: #1a1a2e;
-            border-radius: 8px;
-            border: 1px solid #333;
-            padding: 10px;
-        }
-        
-        .map-controls label {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.8rem;
-            color: #ccc;
-            cursor: pointer;
-            padding: 5px 0;
-        }
-        
-        .map-controls input[type="checkbox"] {
-            accent-color: #00d4ff;
-        }
-        
-        .leaflet-popup-content-wrapper {
-            background: #1a1a2e;
-            color: #fff;
-            border-radius: 8px;
-        }
-        
-        .leaflet-popup-tip {
-            background: #1a1a2e;
-        }
-        
-        .team-tooltip {
-            background: #1a1a2e;
-            border: 1px solid #333;
-            color: #fff;
-            border-radius: 6px;
-            padding: 5px 10px;
-        }
-        
-        .team-tooltip::before {
-            border-top-color: #1a1a2e;
+        .predecessor .mini { display: block; aspect-ratio: 14 / 9; border: 1px solid var(--border); border-radius: 3px; overflow: hidden; }
+        .predecessor .mini img { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; }
+        .predecessor h4 { font-family: var(--font-head); font-weight: 500; color: var(--heading); font-size: 1.15rem; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+        .predecessor p { font-size: 0.9rem; color: var(--muted); margin: 4px 0 8px; }
+        .predecessor .lineage { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+
+        footer { border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+        footer div { max-width: 1080px; margin: 0 auto; padding: 18px 24px 28px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+        @media (max-width: 760px) {
+            .topbar-inner, .hero-inner, main, footer div { padding-left: 16px; padding-right: 16px; }
+            .top-links .label { display: none; }
+            .project { grid-template-columns: 1fr; }
+            .thumb { border-right: 0; border-bottom: 1px solid var(--border); min-height: 0; aspect-ratio: 14 / 9; }
+            .info { padding: 18px 16px; }
+            .predecessor { grid-template-columns: 1fr; padding: 16px; }
+            .predecessor .mini { max-width: 280px; }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="header-left">
-            <img src="logo.png" alt="EcoCAR Logo" class="logo">
-            <div class="title-group">
-                <h1><span>LYRIQ</span> Tracker</h1>
-                <p>EcoCAR EV Challenge - ERAU / BCU — Return Trip</p>
-            </div>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a class="wordmark" href="./">andrew hannah</a>
+            <nav class="top-links">
+                <a href="https://github.com/bmxer7777" title="GitHub profile">
+                    <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.4 6.4-1.5 6.4-6.9a5.4 5.4 0 0 0-1.5-3.7 5 5 0 0 0-.1-3.7s-1.2-.4-3.9 1.5a13.4 13.4 0 0 0-7 0C6.3 1.3 5.1 1.7 5.1 1.7a5 5 0 0 0-.1 3.7A5.4 5.4 0 0 0 3.5 9.1c0 5.4 3.3 6.5 6.4 6.9a3.4 3.4 0 0 0-.9 2.6V22"/></svg>
+                    <span class="label">GitHub</span>
+                </a>
+                <button class="theme-btn" id="theme-btn" title="Switch light / dark">
+                    <svg viewBox="0 0 24 24" id="theme-icon"></svg>
+                    <span class="label" id="theme-label">Theme</span>
+                </button>
+            </nav>
         </div>
-        
-        <div class="header-center">
-            <div class="eta-display">
-                <span class="label">ETA to ERAU: </span>
-                <span class="value" id="eta">Calculating...</span>
-            </div>
-            <div class="progress-container">
-                <div class="progress-bar">
-                    <div class="fill" id="progress-fill" style="width: 0%"></div>
-                </div>
-                <span class="progress-text" id="progress-text">0%</span>
-            </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="eyebrow">Embry-Riddle Aeronautical University · M.S. Mechanical Engineering '26</div>
+            <h1>Projects</h1>
+            <p>Things I've built, mostly for the EcoCAR team at ERAU. Each one runs right here on GitHub Pages.</p>
         </div>
-        
-        <div class="header-right">
-            <button class="tab-btn active" data-tab="map">Map</button>
-            <button class="tab-btn" data-tab="splits">State Splits</button>
-            <button class="tab-btn" data-tab="journey">Journey Stats</button>
-        </div>
-    </div>
-    
-    <div class="main-content">
-        <!-- Map Tab -->
-        <div id="tab-map" class="tab-content active">
-            <div id="map"></div>
-            <div class="map-controls">
-                <label>
-                    <input type="checkbox" id="toggle-teams" checked>
-                    Other EcoCAR Teams
-                </label>
-            </div>
-        </div>
-        
-        <!-- State Splits Tab -->
-        <div id="tab-splits" class="tab-content">
-            <div class="data-panel">
-                <h2>State Split Times</h2>
-                <table class="splits-table">
-                    <thead>
-                        <tr>
-                            <th>State</th>
-                            <th>Time in State</th>
-                            <th>Entry Time</th>
-                        </tr>
-                    </thead>
-                    <tbody id="splits-body">
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        
-        <!-- Journey Stats Tab -->
-        <div id="tab-journey" class="tab-content">
-            <div class="data-panel">
-                <h2>Journey Statistics</h2>
-                <div class="journey-stats">
-                    <div class="journey-stat-card">
-                        <div class="label">Total GPS Pings</div>
-                        <div class="value" id="stat-pings">--</div>
-                        <div class="detail" id="stat-pings-detail"></div>
-                    </div>
-                    <div class="journey-stat-card">
-                        <div class="label">Avg Update Interval</div>
-                        <div class="value" id="stat-interval">--</div>
-                        <div class="detail" id="stat-interval-detail"></div>
-                    </div>
-                    <div class="journey-stat-card">
-                        <div class="label">Max Speed Recorded</div>
-                        <div class="value" id="stat-maxspeed">--</div>
-                        <div class="detail" id="stat-maxspeed-detail"></div>
-                    </div>
+    </section>
+
+    <main>
+        <article class="project">
+            <a class="thumb" href="ecocar-vehicle-tracker/" aria-label="Open the EcoCAR Vehicle Tracker">
+                <img src="assets/thumb-tracker.jpg" alt="The EcoCAR Vehicle Tracker: a map of the route from Daytona Beach to Argonne with ETA and trip stats" loading="lazy">
+            </a>
+            <div class="info">
+                <div class="tags"><span class="tag live">Live</span><span class="tag">EcoCAR</span><span class="tag">2026</span></div>
+                <h3>EcoCAR Vehicle Tracker</h3>
+                <p>A public live map of the team's Chevy Blazer EV on its way to events, powered by an AirTag and a Mac. Anyone with the link sees the route, ETA and states crossed. At an event it switches to "at the venue since…".</p>
+                <ul>
+                    <li>A settings gear to edit the event, route, stops and vehicle from any device</li>
+                    <li>Every EcoCAR Innovation Challenge school on the map, in school colors, split by GM and Stellantis track</li>
+                    <li>ERAU-styled light and dark themes, a DC fast charger layer, and a demo mode</li>
+                </ul>
+                <div class="actions">
+                    <a class="btn primary" href="ecocar-vehicle-tracker/">Open tracker</a>
+                    <a class="btn" href="ecocar-vehicle-tracker/?demo">Try the demo</a>
+                    <a class="btn" href="https://github.com/bmxer7777/ecocar-vehicle-tracker">Source</a>
                 </div>
             </div>
+
+            <div class="predecessor">
+                <a class="mini" href="lyriq/" aria-label="Open the LYRIQ Tracker beta">
+                    <img src="assets/thumb-lyriq.jpg" alt="The LYRIQ Tracker beta: a dark map of the LYRIQ's route from Riverside, California to Daytona Beach" loading="lazy">
+                </a>
+                <div>
+                    <div class="lineage">Where it started</div>
+                    <h4>LYRIQ Tracker <span class="tag beta">Beta · Jan–Feb 2026</span></h4>
+                    <p>The first version, hard-coded for one trip: bringing ERAU's Cadillac LYRIQ home from CARB emissions testing in Riverside, CA, about 2,800 miles. It's archived now, so the map replays that drive.</p>
+                    <a href="lyriq/">View the archived beta →</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <a class="thumb" href="e2eu/" aria-label="Open RecipeTree">
+                <img src="assets/thumb-e2eu.jpg" alt="RecipeTree: a grid of Minecraft item icons with search and bookmarks" loading="lazy">
+            </a>
+            <div class="info">
+                <div class="tags"><span class="tag live">Live</span><span class="tag">Minecraft</span><span class="tag">2026</span></div>
+                <h3>RecipeTree: E2EU Crafting Calc</h3>
+                <p>A fast, in-browser recipe browser for the E2EU modpack: 32,000+ items and 87,000+ recipes. You can search, see what an item is made from and what it's used in, and bookmark the ones you need.</p>
+                <div class="actions">
+                    <a class="btn primary" href="e2eu/">Open RecipeTree</a>
+                    <a class="btn" href="https://github.com/bmxer7777/e2eu">Source</a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div>
+            <span>Andrew Hannah · Embry-Riddle Aeronautical University</span>
+            <a href="https://github.com/bmxer7777">github.com/bmxer7777</a>
         </div>
-    </div>
-    
-    <div class="stats-bar">
-        <div class="stat-card">
-            <div class="label">Distance Traveled</div>
-            <div class="value" id="distance">--</div>
-            <div class="subvalue">miles</div>
-        </div>
-        <div class="stat-card">
-            <div class="label">Current Location</div>
-            <div class="value" id="location">--</div>
-            <div class="subvalue" id="location-sub"></div>
-        </div>
-        <div class="stat-card">
-            <div class="label">Avg Speed</div>
-            <div class="value" id="speed-avg">--</div>
-            <div class="subvalue">mph</div>
-        </div>
-        <div class="stat-card">
-            <div class="label">Recent Speed</div>
-            <div class="value" id="speed-recent">--</div>
-            <div class="subvalue" id="speed-recent-sub">mph</div>
-        </div>
-        <div class="stat-card">
-            <div class="label">States Crossed</div>
-            <div class="value" id="states">--</div>
-            <div class="subvalue" id="states-list"></div>
-        </div>
-        <div class="stat-card">
-            <div class="label">Time in Transit</div>
-            <div class="value" id="time">--</div>
-            <div class="subvalue" id="time-sub"></div>
-        </div>
-    </div>
-    
-    <div class="status-bar">
-        <div class="status">
-            <div class="dot" id="status-dot"></div>
-            <span id="status-text">Tracking Active</span>
-        </div>
-        <div class="last-update">
-            Page refresh: <span id="page-refresh">--</span> | 
-            AirTag update: <span id="last-update">--</span>
-        </div>
-    </div>
+    </footer>
 
     <script>
-        // Configuration
-        const DATA_URL = 'location_history.json';
-        const REFRESH_INTERVAL = 30000;
-        
-        // Destination (ERAU - Return trip)
-        const DESTINATION = { lat: 29.1857, lng: -81.0480, name: "ERAU, Daytona Beach, FL" };
-        // Origin (CARB - 4001 Iowa Ave, Riverside, CA)
-        const ORIGIN = { lat: 33.9725, lng: -117.3425, name: "CARB, Riverside, CA" };
-        // Departure time (return trip - estimate)
-        const DEPARTURE_TIME = new Date('2026-02-08T08:00:00-08:00');
-        // Total route distance (approximate)
-        const TOTAL_ROUTE_MILES = 2400;
-        
-        // EcoCAR team locations
-        const ECOCAR_TEAMS = [
-            { name: "Georgia Tech", city: "Atlanta, GA", lat: 33.7756, lng: -84.3963 },
-            { name: "Illinois Tech", city: "Chicago, IL", lat: 41.8349, lng: -87.6270 },
-            { name: "McMaster University", city: "Hamilton, ON", lat: 43.2609, lng: -79.9192 },
-            { name: "Mississippi State", city: "Starkville, MS", lat: 33.4504, lng: -88.8184 },
-            { name: "Ohio State / Wilberforce", city: "Columbus, OH", lat: 39.9612, lng: -82.9988 },
-            { name: "University of Alabama", city: "Tuscaloosa, AL", lat: 33.2140, lng: -87.5391 },
-            { name: "UC Davis", city: "Davis, CA", lat: 38.5449, lng: -121.7405 },
-            { name: "UC Riverside", city: "Riverside, CA", lat: 33.9737, lng: -117.3281 },
-            { name: "UT Austin", city: "Austin, TX", lat: 30.2849, lng: -97.7341 },
-            { name: "University of Waterloo", city: "Waterloo, ON", lat: 43.4723, lng: -80.5449 },
-            { name: "Virginia Tech", city: "Blacksburg, VA", lat: 37.2296, lng: -80.4139 },
-            { name: "West Virginia University", city: "Morgantown, WV", lat: 39.6350, lng: -79.9545 }
-        ];
-        
-        // State abbreviations
-        const stateAbbreviations = {
-            'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ', 'Arkansas': 'AR',
-            'California': 'CA', 'Colorado': 'CO', 'Connecticut': 'CT', 'Delaware': 'DE',
-            'Florida': 'FL', 'Georgia': 'GA', 'Hawaii': 'HI', 'Idaho': 'ID',
-            'Illinois': 'IL', 'Indiana': 'IN', 'Iowa': 'IA', 'Kansas': 'KS',
-            'Kentucky': 'KY', 'Louisiana': 'LA', 'Maine': 'ME', 'Maryland': 'MD',
-            'Massachusetts': 'MA', 'Michigan': 'MI', 'Minnesota': 'MN', 'Mississippi': 'MS',
-            'Missouri': 'MO', 'Montana': 'MT', 'Nebraska': 'NE', 'Nevada': 'NV',
-            'New Hampshire': 'NH', 'New Jersey': 'NJ', 'New Mexico': 'NM', 'New York': 'NY',
-            'North Carolina': 'NC', 'North Dakota': 'ND', 'Ohio': 'OH', 'Oklahoma': 'OK',
-            'Oregon': 'OR', 'Pennsylvania': 'PA', 'Rhode Island': 'RI', 'South Carolina': 'SC',
-            'South Dakota': 'SD', 'Tennessee': 'TN', 'Texas': 'TX', 'Utah': 'UT',
-            'Vermont': 'VT', 'Virginia': 'VA', 'Washington': 'WA', 'West Virginia': 'WV',
-            'Wisconsin': 'WI', 'Wyoming': 'WY'
-        };
-        
-        const stateFullNames = Object.fromEntries(
-            Object.entries(stateAbbreviations).map(([k, v]) => [v, k])
-        );
-        
-        let map;
-        let routeLine;
-        let currentMarker;
-        let destinationMarker;
-        let teamMarkers = [];
-        let teamsLayerVisible = true;
-        
-        // Tab switching
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-                btn.classList.add('active');
-                document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
-                if (btn.dataset.tab === 'map') {
-                    map.invalidateSize();
-                }
-            });
+        const btn = document.getElementById('theme-btn');
+        const dq = window.matchMedia('(prefers-color-scheme: dark)');
+        const isDark = () => (document.documentElement.dataset.theme || (dq.matches ? 'dark' : 'light')) === 'dark';
+        function paint() {
+            const dark = isDark();
+            document.getElementById('theme-label').textContent = dark ? 'Light mode' : 'Dark mode';
+            document.getElementById('theme-icon').innerHTML = dark
+                ? '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'
+                : '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
+        }
+        btn.addEventListener('click', () => {
+            const next = isDark() ? 'light' : 'dark';
+            document.documentElement.dataset.theme = next;
+            try { localStorage.setItem('site-theme', next); } catch (e) {}
+            paint();
         });
-        
-        // Layer toggles
-        document.getElementById('toggle-teams').addEventListener('change', (e) => {
-            teamsLayerVisible = e.target.checked;
-            teamMarkers.forEach(m => {
-                if (teamsLayerVisible) m.addTo(map);
-                else map.removeLayer(m);
-            });
-        });
-        
-        // Initialize map
-        function initMap() {
-            map = L.map('map').setView([32, -100], 4);
-            
-            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-                attribution: '©OpenStreetMap, ©CartoDB',
-                maxZoom: 19
-            }).addTo(map);
-            
-            // Add destination marker (ERAU - home)
-            destinationMarker = L.marker([DESTINATION.lat, DESTINATION.lng], {
-                icon: L.divIcon({
-                    className: 'dest-marker',
-                    html: '🏠',
-                    iconSize: [25, 25],
-                    iconAnchor: [12, 12]
-                })
-            }).addTo(map).bindPopup(`<b>Destination</b><br>${DESTINATION.name}`);
-            
-            // Add origin marker (CARB - start of return trip)
-            L.marker([ORIGIN.lat, ORIGIN.lng], {
-                icon: L.divIcon({
-                    className: 'origin-marker',
-                    html: '📍',
-                    iconSize: [25, 25],
-                    iconAnchor: [12, 12]
-                })
-            }).addTo(map).bindPopup(`<b>Started Here</b><br>${ORIGIN.name}`);
-            
-            // Add team markers
-            ECOCAR_TEAMS.forEach(team => {
-                const marker = L.circleMarker([team.lat, team.lng], {
-                    radius: 6,
-                    fillColor: '#22c55e',
-                    color: '#fff',
-                    weight: 2,
-                    opacity: 1,
-                    fillOpacity: 1
-                }).bindTooltip(`<b>${team.name}</b><br>${team.city}`, {
-                    permanent: false,
-                    direction: 'top',
-                    className: 'team-tooltip'
-                });
-                teamMarkers.push(marker);
-                if (teamsLayerVisible) marker.addTo(map);
-            });
-        }
-        
-        // Haversine distance
-        function haversineDistance(lat1, lon1, lat2, lon2) {
-            const R = 3959;
-            const dLat = (lat2 - lat1) * Math.PI / 180;
-            const dLon = (lon2 - lon1) * Math.PI / 180;
-            const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-                      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
-                      Math.sin(dLon/2) * Math.sin(dLon/2);
-            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-            return R * c;
-        }
-        
-        // Get road route from OSRM
-        async function getRoadRoute(waypoints) {
-            if (waypoints.length < 2) return null;
-            const coords = waypoints.map(p => `${p[1]},${p[0]}`).join(';');
-            const url = `https://router.project-osrm.org/route/v1/driving/${coords}?overview=full&geometries=geojson`;
-            try {
-                const response = await fetch(url);
-                const data = await response.json();
-                if (data.code === 'Ok' && data.routes && data.routes[0]) {
-                    return {
-                        geometry: data.routes[0].geometry.coordinates.map(c => [c[1], c[0]]),
-                        distance: data.routes[0].distance / 1609.34,
-                        duration: data.routes[0].duration
-                    };
-                }
-            } catch (error) {
-                console.error('OSRM routing error:', error);
-            }
-            return null;
-        }
-        
-        // Format duration
-        function formatDuration(ms) {
-            const totalMinutes = Math.floor(ms / 60000);
-            const hours = Math.floor(totalMinutes / 60);
-            const minutes = totalMinutes % 60;
-            const days = Math.floor(hours / 24);
-            const remainingHours = hours % 24;
-            
-            if (days > 0) {
-                return { value: days, unit: `day${days > 1 ? 's' : ''}, ${remainingHours}h ${minutes}m` };
-            }
-            return { value: hours, unit: `hour${hours !== 1 ? 's' : ''}, ${minutes}m` };
-        }
-        
-        function formatDurationShort(ms) {
-            const totalMinutes = Math.floor(ms / 60000);
-            const hours = Math.floor(totalMinutes / 60);
-            const minutes = totalMinutes % 60;
-            if (hours > 0) return `${hours}h ${minutes}m`;
-            return `${minutes}m`;
-        }
-        
-        // Calculate state splits
-        function calculateStateSplits(locations) {
-            const splits = {};
-            let currentState = null;
-            
-            splits['CA'] = {
-                name: 'California', abbrev: 'CA',
-                entryTime: DEPARTURE_TIME.getTime() / 1000,
-                exitTime: null, current: false
-            };
-            currentState = 'CA';
-            
-            for (let i = 0; i < locations.length; i++) {
-                const loc = locations[i];
-                const addr = loc.address || {};
-                let state = addr.administrativeArea || addr.stateCode;
-                if (state && stateAbbreviations[state]) state = stateAbbreviations[state];
-                
-                if (state && state !== currentState) {
-                    if (currentState && splits[currentState]) {
-                        splits[currentState].exitTime = loc.timestamp;
-                    }
-                    
-                    if (!splits[state]) {
-                        splits[state] = {
-                            name: stateFullNames[state] || state,
-                            abbrev: state,
-                            entryTime: loc.timestamp,
-                            exitTime: null, current: false
-                        };
-                    }
-                    currentState = state;
-                }
-            }
-            
-            if (currentState && splits[currentState]) splits[currentState].current = true;
-            return splits;
-        }
-        
-        function updateSplitsTable(splits) {
-            const tbody = document.getElementById('splits-body');
-            tbody.innerHTML = '';
-            
-            const stateOrder = ['CA', 'AZ', 'NM', 'TX', 'LA', 'MS', 'AL', 'FL'];
-            const sortedStates = Object.values(splits).sort((a, b) => {
-                const aIdx = stateOrder.indexOf(a.abbrev);
-                const bIdx = stateOrder.indexOf(b.abbrev);
-                if (aIdx === -1 && bIdx === -1) return 0;
-                if (aIdx === -1) return 1;
-                if (bIdx === -1) return -1;
-                return aIdx - bIdx;
-            });
-            
-            sortedStates.forEach(state => {
-                const tr = document.createElement('tr');
-                if (state.current) tr.className = 'current';
-                
-                let timeStr = '--';
-                if (state.entryTime && state.exitTime) {
-                    timeStr = formatDurationShort((state.exitTime - state.entryTime) * 1000);
-                } else if (state.current) {
-                    timeStr = '(in progress)';
-                }
-                
-                const entryDate = state.entryTime ? new Date(state.entryTime * 1000) : null;
-                const entryStr = entryDate ? entryDate.toLocaleString('en-US', { 
-                    month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'
-                }) : '--';
-                
-                tr.innerHTML = `
-                    <td class="state-name">${state.name} ${state.current ? '📍' : ''}</td>
-                    <td class="state-time">${timeStr}</td>
-                    <td>${entryStr}</td>
-                `;
-                tbody.appendChild(tr);
-            });
-        }
-        
-        function updateJourneyStats(locations) {
-            document.getElementById('stat-pings').textContent = locations.length;
-            document.getElementById('stat-pings-detail').textContent = 'GPS location updates';
-            
-            if (locations.length >= 2) {
-                let totalInterval = 0, count = 0;
-                for (let i = 1; i < locations.length; i++) {
-                    if (locations[i].timestamp && locations[i-1].timestamp) {
-                        const gap = locations[i].timestamp - locations[i-1].timestamp;
-                        if (gap < 14400) { totalInterval += gap; count++; }
-                    }
-                }
-                if (count > 0) {
-                    document.getElementById('stat-interval').textContent = `${Math.round(totalInterval / count / 60)} min`;
-                    document.getElementById('stat-interval-detail').textContent = 'Between location pings';
-                }
-            }
-            
-            let maxSpeed = 0, maxSpeedLoc = '';
-            for (let i = 1; i < locations.length; i++) {
-                if (locations[i].timestamp && locations[i-1].timestamp) {
-                    const timeDiff = (locations[i].timestamp - locations[i-1].timestamp) / 3600;
-                    if (timeDiff > 0.01 && timeDiff < 1) {
-                        const dist = haversineDistance(
-                            locations[i-1].latitude, locations[i-1].longitude,
-                            locations[i].latitude, locations[i].longitude
-                        );
-                        const speed = dist / timeDiff;
-                        if (speed > maxSpeed && speed < 120) {
-                            maxSpeed = speed;
-                            const addr = locations[i].address || {};
-                            maxSpeedLoc = addr.locality || addr.administrativeArea || '';
-                        }
-                    }
-                }
-            }
-            document.getElementById('stat-maxspeed').textContent = maxSpeed > 0 ? `${Math.round(maxSpeed)} mph` : '--';
-            document.getElementById('stat-maxspeed-detail').textContent = maxSpeedLoc ? `Near ${maxSpeedLoc}` : '';
-        }
-        
-        async function updateTracker() {
-            try {
-                const response = await fetch(DATA_URL + '?t=' + Date.now());
-                const data = await response.json();
-                
-                if (!data.locations || data.locations.length === 0) return;
-                
-                const locations = data.locations;
-                const current = locations[locations.length - 1];
-                
-                const waypoints = [
-                    [ORIGIN.lat, ORIGIN.lng],
-                    ...locations.map(l => [l.latitude, l.longitude])
-                ];
-                
-                const route = await getRoadRoute(waypoints);
-                
-                if (routeLine) map.removeLayer(routeLine);
-                
-                if (route) {
-                    routeLine = L.polyline(route.geometry, {
-                        color: '#00d4ff', weight: 4, opacity: 0.9
-                    }).addTo(map);
-                    
-                    document.getElementById('distance').textContent = Math.round(route.distance).toLocaleString();
-                    
-                    const progress = Math.min(100, (route.distance / TOTAL_ROUTE_MILES) * 100);
-                    document.getElementById('progress-fill').style.width = progress + '%';
-                    document.getElementById('progress-text').textContent = Math.round(progress) + '%';
-                    
-                    const now = new Date();
-                    const transitMs = now - DEPARTURE_TIME;
-                    const hoursElapsed = transitMs / 3600000;
-                    const avgSpeed = route.distance / hoursElapsed;
-                    const remainingMiles = TOTAL_ROUTE_MILES - route.distance;
-                    const remainingHours = remainingMiles / Math.max(avgSpeed, 30);
-                    const eta = new Date(now.getTime() + remainingHours * 3600000);
-                    document.getElementById('eta').textContent = eta.toLocaleString('en-US', {
-                        weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'
-                    });
-                }
-                
-                if (currentMarker) map.removeLayer(currentMarker);
-                currentMarker = L.marker([current.latitude, current.longitude], {
-                    icon: L.divIcon({
-                        className: 'current-marker',
-                        html: '<div style="background:#00d4ff;border:3px solid #fff;border-radius:50%;width:20px;height:20px;box-shadow:0 0 20px rgba(0,212,255,0.5);"></div>',
-                        iconSize: [20, 20],
-                        iconAnchor: [10, 10]
-                    })
-                }).addTo(map).bindPopup(`<b>LYRIQ</b><br>Current Location`);
-                
-                updateSplitsTable(calculateStateSplits(locations));
-                updateJourneyStats(locations);
-                
-                if (route) {
-                    const bounds = L.latLngBounds(route.geometry);
-                    bounds.extend([DESTINATION.lat, DESTINATION.lng]);
-                    map.fitBounds(bounds, { padding: [50, 50] });
-                }
-                
-                const addr = current.address || {};
-                const locParts = [addr.locality, addr.administrativeArea].filter(Boolean);
-                if (locParts.length > 0) {
-                    document.getElementById('location').textContent = locParts[0];
-                    document.getElementById('location-sub').textContent = locParts[1] || '';
-                } else {
-                    document.getElementById('location').innerHTML = 
-                        `${current.latitude.toFixed(4)}°<br>${current.longitude.toFixed(4)}°`;
-                    document.getElementById('location-sub').textContent = '';
-                }
-                
-                const now2 = new Date();
-                const transitMs = now2 - DEPARTURE_TIME;
-                const duration = formatDuration(transitMs);
-                document.getElementById('time').textContent = duration.value;
-                document.getElementById('time-sub').textContent = duration.unit;
-                
-                if (route && route.distance > 0) {
-                    const hoursElapsed = transitMs / 3600000;
-                    document.getElementById('speed-avg').textContent = Math.round(route.distance / hoursElapsed);
-                    
-                    if (locations.length >= 2) {
-                        const prev = locations[locations.length - 2];
-                        const curr = locations[locations.length - 1];
-                        if (prev.timestamp && curr.timestamp) {
-                            const timeDiffSeconds = curr.timestamp - prev.timestamp;
-                            const timeDiffHours = timeDiffSeconds / 3600;
-                            if (timeDiffHours > 0.01) {
-                                const dist = haversineDistance(prev.latitude, prev.longitude, curr.latitude, curr.longitude);
-                                const calcSpeed = dist / timeDiffHours;
-                                if (calcSpeed > 2 && calcSpeed < 120) {
-                                    document.getElementById('speed-recent').textContent = Math.round(calcSpeed);
-                                    const mins = Math.floor(timeDiffSeconds / 60);
-                                    const secs = Math.round(timeDiffSeconds % 60);
-                                    document.getElementById('speed-recent-sub').textContent = mins > 0 
-                                        ? `mph (${mins}m ${secs}s gap)` 
-                                        : `mph (${secs}s gap)`;
-                                } else {
-                                    document.getElementById('speed-recent').textContent = '--';
-                                    document.getElementById('speed-recent-sub').textContent = 'mph';
-                                }
-                            }
-                        }
-                    }
-                }
-                
-                const statesVisited = [];
-                let currentState = null;
-                const currAddr = current.address || {};
-                currentState = currAddr.administrativeArea || currAddr.stateCode;
-                if (currentState && stateAbbreviations[currentState]) currentState = stateAbbreviations[currentState];
-                
-                locations.forEach(l => {
-                    const addr = l.address || {};
-                    let state = addr.administrativeArea || addr.stateCode;
-                    if (state) {
-                        const abbrev = stateAbbreviations[state] || state;
-                        if (!statesVisited.includes(abbrev)) statesVisited.push(abbrev);
-                    }
-                });
-                
-                if (!statesVisited.includes('CA')) statesVisited.unshift('CA');
-                
-                const crossedStates = statesVisited.filter(s => s !== currentState);
-                document.getElementById('states').textContent = crossedStates.length;
-                document.getElementById('states-list').textContent = currentState 
-                    ? crossedStates.join(' → ') + ` → (${currentState})`
-                    : crossedStates.join(' → ');
-                
-                if (current.timestamp) {
-                    document.getElementById('last-update').textContent = new Date(current.timestamp * 1000).toLocaleString();
-                }
-                
-            } catch (error) {
-                console.error('Error:', error);
-            }
-        }
-        
-        initMap();
-        updateTracker();
-        
-        setInterval(() => {
-            const dot = document.getElementById('status-dot');
-            const statusText = document.getElementById('status-text');
-            dot.style.background = '#ffaa00';
-            statusText.textContent = 'Refreshing...';
-            
-            updateTracker().then(() => {
-                dot.style.background = '#00ff88';
-                statusText.textContent = 'Tracking Active';
-                document.getElementById('page-refresh').textContent = new Date().toLocaleTimeString();
-            }).catch(err => {
-                dot.style.background = '#ff4444';
-                statusText.textContent = 'Error';
-            });
-        }, REFRESH_INTERVAL);
-        
-        document.getElementById('page-refresh').textContent = new Date().toLocaleTimeString();
+        dq.addEventListener('change', paint);
+        paint();
     </script>
 </body>
 </html>
